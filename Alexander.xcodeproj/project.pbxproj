@@ -76,16 +76,8 @@
 				3BEDAE241B5DC30500AD52FE /* Alexander.h */,
 				3BEDAE3B1B5DC37600AD52FE /* JSON.swift */,
 				3BEDAE231B5DC30500AD52FE /* Info.plist */,
-				3BEDAE221B5DC30500AD52FE /* Supporting Files */,
 			);
 			path = Alexander;
-			sourceTree = "<group>";
-		};
-		3BEDAE221B5DC30500AD52FE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3BEDAE2E1B5DC30500AD52FE /* AlexanderTests */ = {
