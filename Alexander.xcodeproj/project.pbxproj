@@ -10,6 +10,7 @@
 		3BEDAE251B5DC30500AD52FE /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEDAE241B5DC30500AD52FE /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BEDAE2B1B5DC30500AD52FE /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */; };
 		3BEDAE321B5DC30500AD52FE /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE311B5DC30500AD52FE /* AlexanderTests.swift */; };
+		3BEDAE3C1B5DC37600AD52FE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE3B1B5DC37600AD52FE /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3BEDAE2A1B5DC30500AD52FE /* AlexanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE301B5DC30500AD52FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BEDAE311B5DC30500AD52FE /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
+		3BEDAE3B1B5DC37600AD52FE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				3BEDAE241B5DC30500AD52FE /* Alexander.h */,
+				3BEDAE3B1B5DC37600AD52FE /* JSON.swift */,
+				3BEDAE231B5DC30500AD52FE /* Info.plist */,
 				3BEDAE221B5DC30500AD52FE /* Supporting Files */,
 			);
 			path = Alexander;
@@ -80,7 +84,6 @@
 		3BEDAE221B5DC30500AD52FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BEDAE231B5DC30500AD52FE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEDAE3C1B5DC37600AD52FE /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		3BEDAE361B5DC30500AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3BEDAE371B5DC30500AD52FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +406,7 @@
 				3BEDAE371B5DC30500AD52FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BEDAE381B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "AlexanderTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +415,7 @@
 				3BEDAE3A1B5DC30500AD52FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
