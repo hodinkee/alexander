@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Hodinkee. All rights reserved.
 //
 
-import Foundation
-
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
 }

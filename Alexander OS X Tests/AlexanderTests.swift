@@ -1,12 +1,12 @@
 //
 //  AlexanderTests.swift
-//  AlexanderTests
+//  Alexander
 //
 //  Created by Caleb Davenport on 7/20/15.
 //  Copyright (c) 2015 Hodinkee. All rights reserved.
 //
 
-import UIKit
+import Alexander
 import XCTest
 
 class AlexanderTests: XCTestCase {

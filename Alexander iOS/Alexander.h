@@ -6,14 +6,7 @@
 //  Copyright (c) 2015 Hodinkee. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-//! Project version number for Alexander.
 FOUNDATION_EXPORT double AlexanderVersionNumber;
-
-//! Project version string for Alexander.
 FOUNDATION_EXPORT const unsigned char AlexanderVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Alexander/PublicHeader.h>
-
-
