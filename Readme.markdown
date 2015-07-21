@@ -2,6 +2,10 @@
 
 Alexander is an extremely simple JSON helper written in Swift. It brings type safety and Foundation helpers to the cumbersome task of JSON unpacking.
 
+## Installation
+
+Alexander is just a framework project. You can embed it inside your project directly, or install it with [Carthage](https://github.com/carthage/carthage). Like this: `github "hodinkee/alexander"`.
+
 ## Usage
 
 Make your object conform to the `JSONDecodable` protocol.
