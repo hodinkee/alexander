@@ -36,7 +36,7 @@ You can add `JSONDecodable` to other types as well. Like this:
 
 ```swift
 extension CGSize: JSONDecodable {
-    public static func decode(JSON: Everest.JSON) -> CGSize? {
+    static func decode(JSON: Alexander.JSON) -> CGSize? {
         if
             let width = JSON["width"]?.object as? CGFloat,
             let height = JSON["height"]?.object as? CGFloat {
