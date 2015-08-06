@@ -19,6 +19,15 @@ public protocol JSONDecodable {
 public struct JSON {
     public var object: AnyObject
 
+    public init?(encodable: JSONEncodable) {
+        if let object: AnyObject = encodable.JSON {
+            self.object = object
+        }
+        else {
+            return nil
+        }
+    }
+
     public init(object: AnyObject) {
         self.object = object
     }
