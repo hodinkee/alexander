@@ -8,6 +8,10 @@
 
 import Foundation
 
+public protocol JSONEncodable {
+    var JSON: AnyObject? { get }
+}
+
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
 }
