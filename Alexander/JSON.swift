@@ -92,4 +92,15 @@ public struct JSON {
             }
         })
     }
+
+    public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
+        return array?.reduce([T](), combine: { array, element in
+            switch transform(element) {
+            case .Some(let object):
+                return array + CollectionOfOne(object)
+            case .None:
+                return array
+            }
+        })
+    }
 }
