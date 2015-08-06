@@ -8,10 +8,6 @@
 
 import Foundation
 
-public protocol JSONDecodable {
-    static func decode(JSON: Alexander.JSON) -> Self?
-}
-
 public struct JSON {
     public var object: AnyObject
 
@@ -64,11 +60,7 @@ public struct JSON {
     public var date: NSDate? {
         return timeInterval.map({ NSDate(timeIntervalSince1970: $0) })
     }
-
-    public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
-        return decodeArray(T.decode)
-    }
-
+    
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
         let block: ([T], AnyObject) -> [T] = { array, element in
             switch transform(JSON(object: element)) {
