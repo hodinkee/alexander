@@ -8,25 +8,12 @@
 
 import Foundation
 
-public protocol JSONEncodable {
-    var JSON: AnyObject? { get }
-}
-
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
 }
 
 public struct JSON {
     public var object: AnyObject
-
-    public init?(encodable: JSONEncodable) {
-        if let object: AnyObject = encodable.JSON {
-            self.object = object
-        }
-        else {
-            return nil
-        }
-    }
 
     public init(object: AnyObject) {
         self.object = object
@@ -76,10 +63,6 @@ public struct JSON {
 
     public var date: NSDate? {
         return timeInterval.map({ NSDate(timeIntervalSince1970: $0) })
-    }
-    
-    public func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
-        return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
     }
 
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {

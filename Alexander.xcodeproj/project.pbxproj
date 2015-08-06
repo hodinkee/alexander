@@ -17,6 +17,8 @@
 		3BEDAE6F1B5DC4EC00AD52FE /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */; };
 		3BEDAE761B5DC4EC00AD52FE /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE751B5DC4EC00AD52FE /* AlexanderTests.swift */; };
 		3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
+		4EF849F61B74097B00C5026B /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF849F51B74097B00C5026B /* JSONEncodable.swift */; };
+		4EF849F71B74097B00C5026B /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF849F51B74097B00C5026B /* JSONEncodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		3BEDAE6E1B5DC4EC00AD52FE /* Alexander OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE741B5DC4EC00AD52FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BEDAE751B5DC4EC00AD52FE /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
+		4EF849F51B74097B00C5026B /* JSONEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 			children = (
 				3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */,
 				3B62AAD81B82452800491A67 /* Defines.swift */,
+				4EF849F51B74097B00C5026B /* JSONEncodable.swift */,
 			);
 			path = Alexander;
 			sourceTree = "<group>";
@@ -330,6 +334,7 @@
 			files = (
 				3B62AAD91B82452800491A67 /* Defines.swift in Sources */,
 				3BEDAE5D1B5DC4B200AD52FE /* JSON.swift in Sources */,
+				4EF849F61B74097B00C5026B /* JSONEncodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +352,7 @@
 			files = (
 				3B62AADA1B82452800491A67 /* Defines.swift in Sources */,
 				3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */,
+				4EF849F71B74097B00C5026B /* JSONEncodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
