@@ -77,6 +77,10 @@ public struct JSON {
     public var date: NSDate? {
         return timeInterval.map({ NSDate(timeIntervalSince1970: $0) })
     }
+    
+    public func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
+        return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
+    }
 
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
         return decodeArray(T.decode)
