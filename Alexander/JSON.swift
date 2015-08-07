@@ -9,11 +9,17 @@
 import Foundation
 
 public struct JSON {
-    public var object: AnyObject
-
+    
+    // MARK: - Initializers
+    
     public init(object: AnyObject) {
         self.object = object
     }
+
+    
+    // MARK: - Properties
+    
+    public var object: AnyObject
 
     public subscript(index: Int) -> JSON? {
         let array = object as? [AnyObject]
@@ -60,6 +66,9 @@ public struct JSON {
     public var date: NSDate? {
         return timeInterval.map({ NSDate(timeIntervalSince1970: $0) })
     }
+    
+    
+    // MARK: - Functions
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
         let block: ([T], AnyObject) -> [T] = { array, element in

@@ -13,6 +13,9 @@ public protocol JSONEncodable {
 }
 
 public extension Alexander.JSON {
+    
+    // MARK: - Initializers
+    
     public init?(encodable: JSONEncodable) {
         if let object: AnyObject = encodable.JSON {
             self.object = object
