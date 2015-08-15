@@ -6,44 +6,30 @@
 //  Copyright (c) 2015 Hodinkee. All rights reserved.
 //
 
+import Foundation
+
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
-}
-
-extension Dictionary {
-    private func map<T>(transform: Value -> T) -> [Key: T] {
-        return reduce(self, [Key: T](), { dictionary, element in
-            var mutableDictionary = dictionary
-            mutableDictionary[element.0] = transform(element.1)
-            return mutableDictionary
-        })
-    }
 }
 
 public struct JSON {
     public var object: AnyObject
 
-    public init?(data: NSData, options: NSJSONReadingOptions = .allZeros) {
-        if let object: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: options, error: nil) {
+    public init?(object: AnyObject) {
+        if NSJSONSerialization.isValidJSONObject(object) {
             self.object = object
         }
-        else {
-            return nil
-        }
-    }
-
-    public init(object: AnyObject) {
-        self.object = object
+        return nil
     }
 
     public subscript(index: Int) -> JSON? {
         let array = object as? [AnyObject]
-        return (array?[index]).map({ JSON(object: $0) })
+        return (array?[index]).flatMap({ JSON(object: $0) })
     }
 
     public subscript(key: String) -> JSON? {
         let dictionary = object as? [String: AnyObject]
-        return (dictionary?[key]).map({ JSON(object: $0) })
+        return (dictionary?[key]).flatMap({ JSON(object: $0) })
     }
 
     public var string: String? {
@@ -51,11 +37,29 @@ public struct JSON {
     }
 
     public var dictionary: [String: JSON]? {
-        return (object as? [String: AnyObject])?.map({ JSON(object: $0) })
+        let block: ([String: JSON], (String, AnyObject)) -> [String: JSON] = { dictionary, element in
+            switch JSON(object: element.1) {
+            case .Some(let JSON):
+                var mutableDictionary = dictionary
+                mutableDictionary[element.0] = JSON
+                return mutableDictionary
+            case .None:
+                return dictionary
+            }
+        }
+        return (object as? [String: AnyObject]).map({ reduce($0, [String: JSON](), block) })
     }
 
     public var array: [JSON]? {
-        return (object as? [AnyObject])?.map({ JSON(object: $0) })
+        let block: ([JSON], AnyObject) -> [JSON] = { array, element in
+            switch JSON(object: element) {
+            case .Some(let JSON):
+                return array + CollectionOfOne(JSON)
+            case .None:
+                return array
+            }
+        }
+        return (object as? [AnyObject])?.reduce([JSON](), combine: block)
     }
 
     public var int: Int? {
@@ -83,24 +87,33 @@ public struct JSON {
     }
 
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
-        return array?.reduce([T](), combine: { array, element in
-            switch T.decode(element) {
-            case .Some(let object):
-                return array + CollectionOfOne(object)
-            case .None:
-                return array
-            }
-        })
+        return decodeArray(T.decode)
     }
 
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        return array?.reduce([T](), combine: { array, element in
-            switch transform(element) {
+        let block: ([T], AnyObject) -> [T] = { array, element in
+            switch JSON(object: element).flatMap(transform) {
             case .Some(let object):
                 return array + CollectionOfOne(object)
             case .None:
                 return array
             }
-        })
+        }
+        return (object as? [AnyObject]).map({ reduce($0, [T](), block) })
+    }
+}
+
+extension JSON {
+    public init?(data: NSData, options: NSJSONReadingOptions = .allZeros) {
+        if let object: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: options, error: nil) {
+            self.object = object
+        }
+        else {
+            return nil
+        }
+    }
+
+    func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
+        return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
     }
 }
