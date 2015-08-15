@@ -117,3 +117,15 @@ extension JSON {
         return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
     }
 }
+
+extension JSON: DebugPrintable {
+    public var debugDescription: String {
+        if
+            let data = self.data(options: .PrettyPrinted),
+            let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
+                return String(string)
+        }
+        return "Invalid JSON object."
+    }
+
+}
