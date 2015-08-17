@@ -34,12 +34,7 @@ public struct JSON {
     }
 
     public var dictionary: [String: JSON]? {
-        let block: ([String: JSON], (String, AnyObject)) -> [String: JSON] = { dictionary, element in
-            var mutableDictionary = dictionary
-            mutableDictionary[element.0] = Alexander.JSON(object: element.1)
-            return mutableDictionary
-        }
-        return (object as? [String: AnyObject]).map({ reduce($0, [String: JSON](), block) })
+        return (object as? [String: AnyObject])?.mapValues({ JSON(object: $0) })
     }
 
     public var array: [JSON]? {
