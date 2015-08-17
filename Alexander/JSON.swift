@@ -21,12 +21,12 @@ public struct JSON {
 
     public subscript(index: Int) -> JSON? {
         let array = object as? [AnyObject]
-        return (array?[index]).flatMap({ JSON(object: $0) })
+        return (array?[index]).map({ JSON(object: $0) })
     }
 
     public subscript(key: String) -> JSON? {
         let dictionary = object as? [String: AnyObject]
-        return (dictionary?[key]).flatMap({ JSON(object: $0) })
+        return (dictionary?[key]).map({ JSON(object: $0) })
     }
 
     public var string: String? {
@@ -43,10 +43,6 @@ public struct JSON {
     }
 
     public var array: [JSON]? {
-        let block: ([JSON], AnyObject) -> [JSON] = { array, element in
-            let JSON = Alexander.JSON(object: element)
-            return array + CollectionOfOne(JSON)
-        }
         return (object as? [AnyObject])?.map({ JSON(object: $0) })
     }
 
@@ -116,7 +112,7 @@ extension JSON: DebugPrintable {
             let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
                 return String(string)
         }
-        return "Invalid JSON object."
+        return "Invalid JSON."
     }
 
 }
