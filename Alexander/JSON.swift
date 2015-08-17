@@ -92,7 +92,7 @@ extension JSON {
         }
     }
 
-    func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
+    public func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
         if NSJSONSerialization.isValidJSONObject(object) {
             return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
         }
