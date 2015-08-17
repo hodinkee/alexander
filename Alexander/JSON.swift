@@ -15,11 +15,8 @@ public protocol JSONDecodable {
 public struct JSON {
     public var object: AnyObject
 
-    public init?(object: AnyObject) {
-        if NSJSONSerialization.isValidJSONObject(object) {
-            self.object = object
-        }
-        return nil
+    public init(object: AnyObject) {
+        self.object = object
     }
 
     public subscript(index: Int) -> JSON? {
@@ -38,28 +35,19 @@ public struct JSON {
 
     public var dictionary: [String: JSON]? {
         let block: ([String: JSON], (String, AnyObject)) -> [String: JSON] = { dictionary, element in
-            switch JSON(object: element.1) {
-            case .Some(let JSON):
-                var mutableDictionary = dictionary
-                mutableDictionary[element.0] = JSON
-                return mutableDictionary
-            case .None:
-                return dictionary
-            }
+            var mutableDictionary = dictionary
+            mutableDictionary[element.0] = Alexander.JSON(object: element.1)
+            return mutableDictionary
         }
         return (object as? [String: AnyObject]).map({ reduce($0, [String: JSON](), block) })
     }
 
     public var array: [JSON]? {
         let block: ([JSON], AnyObject) -> [JSON] = { array, element in
-            switch JSON(object: element) {
-            case .Some(let JSON):
-                return array + CollectionOfOne(JSON)
-            case .None:
-                return array
-            }
+            let JSON = Alexander.JSON(object: element)
+            return array + CollectionOfOne(JSON)
         }
-        return (object as? [AnyObject])?.reduce([JSON](), combine: block)
+        return (object as? [AnyObject])?.map({ JSON(object: $0) })
     }
 
     public var int: Int? {
@@ -92,7 +80,7 @@ public struct JSON {
 
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
         let block: ([T], AnyObject) -> [T] = { array, element in
-            switch JSON(object: element).flatMap(transform) {
+            switch transform(JSON(object: element)) {
             case .Some(let object):
                 return array + CollectionOfOne(object)
             case .None:
@@ -114,6 +102,9 @@ extension JSON {
     }
 
     func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
+        if NSJSONSerialization.isValidJSONObject(object) {
+            return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
+        }
         return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
     }
 }
