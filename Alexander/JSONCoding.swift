@@ -2,7 +2,7 @@
 //  JSONCoding.swift
 //  Alexander
 //
-//  Created by Caleb Davenport on 8/17/15.
+//  Created by Jonathan Baker on 8/6/15.
 //  Copyright (c) 2015 Hodinkee. All rights reserved.
 //
 
