@@ -1,5 +1,5 @@
 //
-//  JSONCoding.swift
+//  JSONCodable.swift
 //  Alexander
 //
 //  Created by Jonathan Baker on 8/6/15.
@@ -19,5 +19,3 @@ public extension Alexander.JSON {
         return decodeArray(T.decode)
     }
 }
-
-public protocol JSONCoding: JSONEncodable, JSONDecodable {}
