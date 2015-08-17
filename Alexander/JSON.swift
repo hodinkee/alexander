@@ -6,31 +6,14 @@
 //  Copyright (c) 2015 Hodinkee. All rights reserved.
 //
 
+import Foundation
+
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
 }
 
-extension Dictionary {
-    private func map<T>(transform: Value -> T) -> [Key: T] {
-        return reduce(self, [Key: T](), { dictionary, element in
-            var mutableDictionary = dictionary
-            mutableDictionary[element.0] = transform(element.1)
-            return mutableDictionary
-        })
-    }
-}
-
 public struct JSON {
     public var object: AnyObject
-
-    public init?(data: NSData, options: NSJSONReadingOptions = .allZeros) {
-        if let object: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: options, error: nil) {
-            self.object = object
-        }
-        else {
-            return nil
-        }
-    }
 
     public init(object: AnyObject) {
         self.object = object
@@ -51,7 +34,7 @@ public struct JSON {
     }
 
     public var dictionary: [String: JSON]? {
-        return (object as? [String: AnyObject])?.map({ JSON(object: $0) })
+        return (object as? [String: AnyObject])?.mapValues({ JSON(object: $0) })
     }
 
     public var array: [JSON]? {
@@ -83,24 +66,48 @@ public struct JSON {
     }
 
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
-        return array?.reduce([T](), combine: { array, element in
-            switch T.decode(element) {
-            case .Some(let object):
-                return array + CollectionOfOne(object)
-            case .None:
-                return array
-            }
-        })
+        return decodeArray(T.decode)
     }
 
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        return array?.reduce([T](), combine: { array, element in
-            switch transform(element) {
+        let block: ([T], AnyObject) -> [T] = { array, element in
+            switch transform(JSON(object: element)) {
             case .Some(let object):
                 return array + CollectionOfOne(object)
             case .None:
                 return array
             }
-        })
+        }
+        return (object as? [AnyObject]).map({ reduce($0, [T](), block) })
     }
+}
+
+extension JSON {
+    public init?(data: NSData, options: NSJSONReadingOptions = .allZeros) {
+        if let object: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: options, error: nil) {
+            self.object = object
+        }
+        else {
+            return nil
+        }
+    }
+
+    public func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
+        if NSJSONSerialization.isValidJSONObject(object) {
+            return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
+        }
+        return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
+    }
+}
+
+extension JSON: DebugPrintable {
+    public var debugDescription: String {
+        if
+            let data = self.data(options: .PrettyPrinted),
+            let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
+                return String(string)
+        }
+        return "Invalid JSON."
+    }
+
 }
