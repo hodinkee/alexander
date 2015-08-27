@@ -97,7 +97,7 @@ extension JSON {
         if NSJSONSerialization.isValidJSONObject(object) {
             return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
         }
-        return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
+        return nil
     }
 }
 
