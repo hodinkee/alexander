@@ -8,6 +8,12 @@
 
 import Foundation
 
+extension JSON {
+    enum Error: ErrorType {
+        case InvalidObject
+    }
+}
+
 public struct JSON {
     
     // MARK: - Initializers
@@ -71,40 +77,44 @@ public struct JSON {
     // MARK: - Functions
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        let block: ([T], AnyObject) -> [T] = { array, element in
+        return (object as? [AnyObject])?.reduce([T](), combine: { array, element in
             switch transform(JSON(object: element)) {
             case .Some(let object):
                 return array + CollectionOfOne(object)
             case .None:
                 return array
             }
-        }
-        return (object as? [AnyObject]).map({ reduce($0, [T](), block) })
+        })
     }
 }
 
 extension JSON {
-    public init?(data: NSData, options: NSJSONReadingOptions = .allZeros) {
-        if let object: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: options, error: nil) {
-            self.object = object
+    public init(data: NSData, options: NSJSONReadingOptions = []) throws {
+        do {
+            self.object = try NSJSONSerialization.JSONObjectWithData(data, options: options)
         }
-        else {
-            return nil
+        catch {
+            throw error
         }
     }
 
-    public func data(options: NSJSONWritingOptions = .allZeros) -> NSData? {
+    public func data(options: NSJSONWritingOptions = []) throws -> NSData {
         if NSJSONSerialization.isValidJSONObject(object) {
-            return NSJSONSerialization.dataWithJSONObject(object, options: options, error: nil)
+            do {
+                return try NSJSONSerialization.dataWithJSONObject(object, options: options)
+            }
+            catch {
+                throw error
+            }
         }
-        return nil
+        throw Error.InvalidObject
     }
 }
 
-extension JSON: DebugPrintable {
+extension JSON: CustomDebugStringConvertible {
     public var debugDescription: String {
         if
-            let data = self.data(options: .PrettyPrinted),
+            let data = try? self.data(.PrettyPrinted),
             let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
                 return String(string)
         }

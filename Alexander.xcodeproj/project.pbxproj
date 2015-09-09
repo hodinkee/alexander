@@ -258,6 +258,7 @@
 		3BEDAE161B5DC30500AD52FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Hodinkee;
 				TargetAttributes = {
