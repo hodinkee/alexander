@@ -8,10 +8,8 @@
 
 import Foundation
 
-extension JSON {
-    enum Error: ErrorType {
-        case InvalidObject
-    }
+enum AlexanderError: ErrorType {
+    case InvalidObject
 }
 
 public struct JSON {
@@ -90,24 +88,14 @@ public struct JSON {
 
 extension JSON {
     public init(data: NSData, options: NSJSONReadingOptions = []) throws {
-        do {
-            self.object = try NSJSONSerialization.JSONObjectWithData(data, options: options)
-        }
-        catch {
-            throw error
-        }
+        self.object = try NSJSONSerialization.JSONObjectWithData(data, options: options)
     }
 
     public func data(options: NSJSONWritingOptions = []) throws -> NSData {
         if NSJSONSerialization.isValidJSONObject(object) {
-            do {
-                return try NSJSONSerialization.dataWithJSONObject(object, options: options)
-            }
-            catch {
-                throw error
-            }
+            return try NSJSONSerialization.dataWithJSONObject(object, options: options)
         }
-        throw Error.InvalidObject
+        throw AlexanderError.InvalidObject
     }
 }
 
