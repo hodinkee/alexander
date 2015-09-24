@@ -75,14 +75,10 @@ public struct JSON {
     // MARK: - Functions
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        return (object as? [AnyObject])?.reduce([T](), combine: { array, element in
-            switch transform(JSON(object: element)) {
-            case .Some(let object):
-                return array + CollectionOfOne(object)
-            case .None:
-                return array
-            }
-        })
+        return (object as? [AnyObject])?.lazy
+            .map(JSON.init)
+            .map(transform)
+            .flatMap({ $0 })
     }
 }
 
