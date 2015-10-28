@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A512EC81BE15A380091A124 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
 		3B62AAD91B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADA1B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADC1B824C1200491A67 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
@@ -352,6 +353,7 @@
 			files = (
 				3B62AADA1B82452800491A67 /* Defines.swift in Sources */,
 				3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */,
+				3A512EC81BE15A380091A124 /* JSONCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
