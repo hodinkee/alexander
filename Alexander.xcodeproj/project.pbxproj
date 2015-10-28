@@ -10,6 +10,16 @@
 		3A512EC81BE15A380091A124 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
 		3A512ED21BE169390091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512ECB1BE168C30091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512ED31BE1693C0091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512ECE1BE168C30091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A512EE31BE169920091A124 /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A512ED91BE169910091A124 /* Alexander.framework */; };
+		3A512EE81BE169920091A124 /* Alexander_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A512EE71BE169920091A124 /* Alexander_tvOSTests.swift */; };
+		3A512F021BE16AD10091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512EFD1BE16AC00091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A512F031BE16AD60091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512EFF1BE16AC60091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A512F041BE16B250091A124 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
+		3A512F051BE16B250091A124 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
+		3A512F061BE16B250091A124 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
+		3A512F071BE16B250091A124 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
+		3A512F081BE16B250091A124 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
+		3A512F091BE16B250091A124 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AAD91B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADA1B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADC1B824C1200491A67 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
@@ -22,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A512EE41BE169920091A124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BEDAE161B5DC30500AD52FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A512ED81BE169910091A124;
+			remoteInfo = "Alexander tvOS";
+		};
 		3BEDAE2C1B5DC30500AD52FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BEDAE161B5DC30500AD52FE /* Project object */;
@@ -43,6 +60,15 @@
 		3A512ECC1BE168C30091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512ECE1BE168C30091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
 		3A512ECF1BE168C30091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A512ED91BE169910091A124 /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A512EE71BE169920091A124 /* Alexander_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alexander_tvOSTests.swift; sourceTree = "<group>"; };
+		3A512EE91BE169920091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A512EF51BE169A00091A124 /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A512EFD1BE16AC00091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
+		3A512EFE1BE16AC00091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A512EFF1BE16AC60091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
+		3A512F001BE16AC60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B62AAD81B82452800491A67 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		3B62AADB1B824C1200491A67 /* JSONCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
 		3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,12 +77,34 @@
 		3BEDAE311B5DC30500AD52FE /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
 		3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BEDAE6E1B5DC4EC00AD52FE /* Alexander OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE741B5DC4EC00AD52FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BEDAE751B5DC4EC00AD52FE /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A512ED51BE169910091A124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EDF1BE169920091A124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A512EE31BE169920091A124 /* Alexander.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EF11BE169A00091A124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEDAE1B1B5DC30500AD52FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +170,8 @@
 		3A512ED01BE168C30091A124 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				3A512EFD1BE16AC00091A124 /* Alexander.h */,
+				3A512EFE1BE16AC00091A124 /* Info.plist */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -129,8 +179,19 @@
 		3A512ED11BE168C30091A124 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				3A512EFF1BE16AC60091A124 /* Alexander.h */,
+				3A512F001BE16AC60091A124 /* Info.plist */,
 			);
 			path = watchOS;
+			sourceTree = "<group>";
+		};
+		3A512EE61BE169920091A124 /* Alexander tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A512EE71BE169920091A124 /* Alexander_tvOSTests.swift */,
+				3A512EE91BE169920091A124 /* Info.plist */,
+			);
+			path = "Alexander tvOSTests";
 			sourceTree = "<group>";
 		};
 		3BEDAE151B5DC30500AD52FE = {
@@ -139,6 +200,7 @@
 				3BEDAE5B1B5DC4B200AD52FE /* Alexander */,
 				3BEDAE2E1B5DC30500AD52FE /* Alexander iOS Tests */,
 				3BEDAE721B5DC4EC00AD52FE /* Alexander OS X Tests */,
+				3A512EE61BE169920091A124 /* Alexander tvOSTests */,
 				3BEDAE201B5DC30500AD52FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,7 +211,10 @@
 				3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */,
 				3BEDAE2A1B5DC30500AD52FE /* Alexander iOS Tests.xctest */,
 				3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */,
-				3BEDAE6E1B5DC4EC00AD52FE /* Alexander OS X Tests.xctest */,
+				3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */,
+				3A512ED91BE169910091A124 /* Alexander.framework */,
+				3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */,
+				3A512EF51BE169A00091A124 /* Alexander.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +251,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3A512ED61BE169910091A124 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A512F021BE16AD10091A124 /* Alexander.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EF21BE169A00091A124 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A512F031BE16AD60091A124 /* Alexander.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEDAE1C1B5DC30500AD52FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +286,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3A512ED81BE169910091A124 /* Alexander tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A512EEA1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS" */;
+			buildPhases = (
+				3A512ED41BE169910091A124 /* Sources */,
+				3A512ED51BE169910091A124 /* Frameworks */,
+				3A512ED61BE169910091A124 /* Headers */,
+				3A512ED71BE169910091A124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alexander tvOS";
+			productName = "Alexander tvOS";
+			productReference = 3A512ED91BE169910091A124 /* Alexander.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A512EE11BE169920091A124 /* Alexander tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A512EED1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS Tests" */;
+			buildPhases = (
+				3A512EDE1BE169920091A124 /* Sources */,
+				3A512EDF1BE169920091A124 /* Frameworks */,
+				3A512EE01BE169920091A124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A512EE51BE169920091A124 /* PBXTargetDependency */,
+			);
+			name = "Alexander tvOS Tests";
+			productName = "Alexander tvOSTests";
+			productReference = 3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A512EF41BE169A00091A124 /* Alexander watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A512EFA1BE169A00091A124 /* Build configuration list for PBXNativeTarget "Alexander watchOS" */;
+			buildPhases = (
+				3A512EF01BE169A00091A124 /* Sources */,
+				3A512EF11BE169A00091A124 /* Frameworks */,
+				3A512EF21BE169A00091A124 /* Headers */,
+				3A512EF31BE169A00091A124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alexander watchOS";
+			productName = "Alexander watchOS";
+			productReference = 3A512EF51BE169A00091A124 /* Alexander.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3BEDAE1E1B5DC30500AD52FE /* Alexander iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BEDAE351B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander iOS" */;
@@ -241,9 +376,9 @@
 			productReference = 3BEDAE2A1B5DC30500AD52FE /* Alexander iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3BEDAE631B5DC4EC00AD52FE /* Alexander OS X */ = {
+		3BEDAE631B5DC4EC00AD52FE /* Alexander macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander OS X" */;
+			buildConfigurationList = 3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS" */;
 			buildPhases = (
 				3BEDAE5F1B5DC4EC00AD52FE /* Sources */,
 				3BEDAE601B5DC4EC00AD52FE /* Frameworks */,
@@ -254,14 +389,14 @@
 			);
 			dependencies = (
 			);
-			name = "Alexander OS X";
+			name = "Alexander macOS";
 			productName = "Alexander OS X";
 			productReference = 3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BEDAE6D1B5DC4EC00AD52FE /* Alexander OS X Tests */ = {
+		3BEDAE6D1B5DC4EC00AD52FE /* Alexander macOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander OS X Tests" */;
+			buildConfigurationList = 3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS Tests" */;
 			buildPhases = (
 				3BEDAE6A1B5DC4EC00AD52FE /* Sources */,
 				3BEDAE6B1B5DC4EC00AD52FE /* Frameworks */,
@@ -272,9 +407,9 @@
 			dependencies = (
 				3BEDAE711B5DC4EC00AD52FE /* PBXTargetDependency */,
 			);
-			name = "Alexander OS X Tests";
+			name = "Alexander macOS Tests";
 			productName = "Alexander OS XTests";
-			productReference = 3BEDAE6E1B5DC4EC00AD52FE /* Alexander OS X Tests.xctest */;
+			productReference = 3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -283,10 +418,19 @@
 		3BEDAE161B5DC30500AD52FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Hodinkee;
 				TargetAttributes = {
+					3A512ED81BE169910091A124 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					3A512EE11BE169920091A124 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					3A512EF41BE169A00091A124 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					3BEDAE1E1B5DC30500AD52FE = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -315,13 +459,37 @@
 			targets = (
 				3BEDAE1E1B5DC30500AD52FE /* Alexander iOS */,
 				3BEDAE291B5DC30500AD52FE /* Alexander iOS Tests */,
-				3BEDAE631B5DC4EC00AD52FE /* Alexander OS X */,
-				3BEDAE6D1B5DC4EC00AD52FE /* Alexander OS X Tests */,
+				3BEDAE631B5DC4EC00AD52FE /* Alexander macOS */,
+				3BEDAE6D1B5DC4EC00AD52FE /* Alexander macOS Tests */,
+				3A512ED81BE169910091A124 /* Alexander tvOS */,
+				3A512EE11BE169920091A124 /* Alexander tvOS Tests */,
+				3A512EF41BE169A00091A124 /* Alexander watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A512ED71BE169910091A124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EE01BE169920091A124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EF31BE169A00091A124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEDAE1D1B5DC30500AD52FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +521,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A512ED41BE169910091A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A512F051BE16B250091A124 /* JSONCodable.swift in Sources */,
+				3A512F041BE16B250091A124 /* JSON.swift in Sources */,
+				3A512F061BE16B250091A124 /* Defines.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EDE1BE169920091A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A512EE81BE169920091A124 /* Alexander_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A512EF01BE169A00091A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A512F081BE16B250091A124 /* JSONCodable.swift in Sources */,
+				3A512F071BE16B250091A124 /* JSON.swift in Sources */,
+				3A512F091BE16B250091A124 /* Defines.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEDAE1A1B5DC30500AD52FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +588,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3A512EE51BE169920091A124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A512ED81BE169910091A124 /* Alexander tvOS */;
+			targetProxy = 3A512EE41BE169920091A124 /* PBXContainerItemProxy */;
+		};
 		3BEDAE2D1B5DC30500AD52FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3BEDAE1E1B5DC30500AD52FE /* Alexander iOS */;
@@ -399,12 +600,118 @@
 		};
 		3BEDAE711B5DC4EC00AD52FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BEDAE631B5DC4EC00AD52FE /* Alexander OS X */;
+			target = 3BEDAE631B5DC4EC00AD52FE /* Alexander macOS */;
 			targetProxy = 3BEDAE701B5DC4EC00AD52FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3A512EEB1BE169920091A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Alexander/Configuration/tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Alexander;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		3A512EEC1BE169920091A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Alexander/Configuration/tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Alexander;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		3A512EEE1BE169920091A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Alexander tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		3A512EEF1BE169920091A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Alexander tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		3A512EFB1BE169A00091A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Alexander/Configuration/watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Alexander;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		3A512EFC1BE169A00091A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Alexander/Configuration/watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Alexander;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		3BEDAE331B5DC30500AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -641,6 +948,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A512EEA1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A512EEB1BE169920091A124 /* Debug */,
+				3A512EEC1BE169920091A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A512EED1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A512EEE1BE169920091A124 /* Debug */,
+				3A512EEF1BE169920091A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A512EFA1BE169A00091A124 /* Build configuration list for PBXNativeTarget "Alexander watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A512EFB1BE169A00091A124 /* Debug */,
+				3A512EFC1BE169A00091A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3BEDAE191B5DC30500AD52FE /* Build configuration list for PBXProject "Alexander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -668,7 +999,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander OS X" */ = {
+		3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEDAE781B5DC4EC00AD52FE /* Debug */,
@@ -677,7 +1008,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander OS X Tests" */ = {
+		3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEDAE7B1B5DC4EC00AD52FE /* Debug */,
