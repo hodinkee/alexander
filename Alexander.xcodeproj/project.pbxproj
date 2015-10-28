@@ -11,7 +11,6 @@
 		3A512ED21BE169390091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512ECB1BE168C30091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512ED31BE1693C0091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512ECE1BE168C30091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512EE31BE169920091A124 /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A512ED91BE169910091A124 /* Alexander.framework */; };
-		3A512EE81BE169920091A124 /* Alexander_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A512EE71BE169920091A124 /* Alexander_tvOSTests.swift */; };
 		3A512F021BE16AD10091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512EFD1BE16AC00091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512F031BE16AD60091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512EFF1BE16AC60091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512F041BE16B250091A124 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
@@ -20,14 +19,15 @@
 		3A512F071BE16B250091A124 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
 		3A512F081BE16B250091A124 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
 		3A512F091BE16B250091A124 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
+		3A512F131BE16BE20091A124 /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A512F0B1BE16BB60091A124 /* AlexanderTests.swift */; };
+		3A512F141BE16BE20091A124 /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A512F0B1BE16BB60091A124 /* AlexanderTests.swift */; };
+		3A512F151BE16BE40091A124 /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A512F0B1BE16BB60091A124 /* AlexanderTests.swift */; };
 		3B62AAD91B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADA1B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADC1B824C1200491A67 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
 		3BEDAE2B1B5DC30500AD52FE /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */; };
-		3BEDAE321B5DC30500AD52FE /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE311B5DC30500AD52FE /* AlexanderTests.swift */; };
 		3BEDAE5D1B5DC4B200AD52FE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
 		3BEDAE6F1B5DC4EC00AD52FE /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */; };
-		3BEDAE761B5DC4EC00AD52FE /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE751B5DC4EC00AD52FE /* AlexanderTests.swift */; };
 		3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,24 +62,22 @@
 		3A512ECF1BE168C30091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512ED91BE169910091A124 /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A512EE71BE169920091A124 /* Alexander_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alexander_tvOSTests.swift; sourceTree = "<group>"; };
-		3A512EE91BE169920091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512EF51BE169A00091A124 /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A512EFD1BE16AC00091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
 		3A512EFE1BE16AC00091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512EFF1BE16AC60091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
 		3A512F001BE16AC60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A512F0B1BE16BB60091A124 /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
+		3A512F0E1BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A512F101BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A512F121BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B62AAD81B82452800491A67 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		3B62AADB1B824C1200491A67 /* JSONCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
 		3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE2A1B5DC30500AD52FE /* Alexander iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BEDAE301B5DC30500AD52FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BEDAE311B5DC30500AD52FE /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
 		3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BEDAE741B5DC4EC00AD52FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BEDAE751B5DC4EC00AD52FE /* AlexanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,22 +183,54 @@
 			path = watchOS;
 			sourceTree = "<group>";
 		};
-		3A512EE61BE169920091A124 /* Alexander tvOSTests */ = {
+		3A512F0A1BE16BB60091A124 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3A512EE71BE169920091A124 /* Alexander_tvOSTests.swift */,
-				3A512EE91BE169920091A124 /* Info.plist */,
+				3A512F0B1BE16BB60091A124 /* AlexanderTests.swift */,
+				3A512F0C1BE16BB60091A124 /* Configuration */,
 			);
-			path = "Alexander tvOSTests";
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3A512F0C1BE16BB60091A124 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3A512F0D1BE16BB60091A124 /* iOS */,
+				3A512F0F1BE16BB60091A124 /* macOS */,
+				3A512F111BE16BB60091A124 /* tvOS */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3A512F0D1BE16BB60091A124 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A512F0E1BE16BB60091A124 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3A512F0F1BE16BB60091A124 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A512F101BE16BB60091A124 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3A512F111BE16BB60091A124 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A512F121BE16BB60091A124 /* Info.plist */,
+			);
+			path = tvOS;
 			sourceTree = "<group>";
 		};
 		3BEDAE151B5DC30500AD52FE = {
 			isa = PBXGroup;
 			children = (
 				3BEDAE5B1B5DC4B200AD52FE /* Alexander */,
-				3BEDAE2E1B5DC30500AD52FE /* Alexander iOS Tests */,
-				3BEDAE721B5DC4EC00AD52FE /* Alexander OS X Tests */,
-				3A512EE61BE169920091A124 /* Alexander tvOSTests */,
+				3A512F0A1BE16BB60091A124 /* Tests */,
 				3BEDAE201B5DC30500AD52FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -219,15 +249,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3BEDAE2E1B5DC30500AD52FE /* Alexander iOS Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3BEDAE311B5DC30500AD52FE /* AlexanderTests.swift */,
-				3BEDAE301B5DC30500AD52FE /* Info.plist */,
-			);
-			path = "Alexander iOS Tests";
-			sourceTree = "<group>";
-		};
 		3BEDAE5B1B5DC4B200AD52FE /* Alexander */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,15 +258,6 @@
 				3A512EC91BE168C30091A124 /* Configuration */,
 			);
 			path = Alexander;
-			sourceTree = "<group>";
-		};
-		3BEDAE721B5DC4EC00AD52FE /* Alexander OS X Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3BEDAE751B5DC4EC00AD52FE /* AlexanderTests.swift */,
-				3BEDAE741B5DC4EC00AD52FE /* Info.plist */,
-			);
-			path = "Alexander OS X Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,7 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A512EE81BE169920091A124 /* Alexander_tvOSTests.swift in Sources */,
+				3A512F151BE16BE40091A124 /* AlexanderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BEDAE321B5DC30500AD52FE /* AlexanderTests.swift in Sources */,
+				3A512F131BE16BE20091A124 /* AlexanderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BEDAE761B5DC4EC00AD52FE /* AlexanderTests.swift in Sources */,
+				3A512F141BE16BE20091A124 /* AlexanderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +661,7 @@
 		3A512EEE1BE169920091A124 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Alexander tvOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Configuration/tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -661,7 +673,7 @@
 		3A512EEF1BE169920091A124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Alexander tvOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Configuration/tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -841,7 +853,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Alexander iOS Tests/Info.plist";
+				INFOPLIST_FILE = Tests/Configuration/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
@@ -854,7 +866,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "Alexander iOS Tests/Info.plist";
+				INFOPLIST_FILE = Tests/Configuration/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
@@ -919,7 +931,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Alexander OS X Tests/Info.plist";
+				INFOPLIST_FILE = Tests/Configuration/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
@@ -936,7 +948,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Alexander OS X Tests/Info.plist";
+				INFOPLIST_FILE = Tests/Configuration/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
