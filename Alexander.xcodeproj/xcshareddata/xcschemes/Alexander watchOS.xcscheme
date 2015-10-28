@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3A512EF41BE169A00091A124"
-               BuildableName = "Alexander watchOS.framework"
+               BuildableName = "Alexander.framework"
                BlueprintName = "Alexander watchOS"
                ReferencedContainer = "container:Alexander.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A512EF41BE169A00091A124"
-            BuildableName = "Alexander watchOS.framework"
+            BuildableName = "Alexander.framework"
             BlueprintName = "Alexander watchOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A512EF41BE169A00091A124"
-            BuildableName = "Alexander watchOS.framework"
+            BuildableName = "Alexander.framework"
             BlueprintName = "Alexander watchOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
