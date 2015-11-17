@@ -74,7 +74,7 @@ enum Planet: String {
     case Jupiter = "jupiter"
     case Saturn = "saturn"
     case Uranus = "uranus"
-    case Neptune = "Neptune"
+    case Neptune = "neptune"
     // case Pluto = "pluto" =(
 }
 ```
