@@ -112,11 +112,11 @@ extension JSON: CustomDebugStringConvertible {
 }
 
 extension JSON {
-    func decode<T: RawRepresentable>(type: T.Type) -> T? {
+    public func decode<T: RawRepresentable>(type: T.Type) -> T? {
         return (object as? T.RawValue).flatMap(T.init)
     }
 
-    func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
+    public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
         return (object as? [T.RawValue])?.lazy.map(T.init).flatMap({ $0 })
     }
 }
