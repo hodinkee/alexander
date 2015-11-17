@@ -79,12 +79,4 @@ enum Planet: String {
 }
 ```
 
-Because all Swift `enum` are `RawRepresentable`, you can do the following:
-
-```swift
-let planet = JSON["planet"]?.decode(Planet)
-```
-
-```swift
-let planets = JSON["planets"]?.decodeArray(Planet)
-```
+Because `Planet` is backed by a `String` raw value type, it is inheriently `RawRepresentable`. This means you can do `let planet = JSON["planet"]?.decode(Planet)` or `let planets = JSON["planets"]?.decodeArray(Planet)`.
