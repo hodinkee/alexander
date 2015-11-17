@@ -15,6 +15,10 @@ public protocol JSONDecodable {
 }
 
 public extension Alexander.JSON {
+    public func decode<T: JSONDecodable>(type: T.Type) -> T? {
+        return decode(T.decode)
+    }
+
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
         return decodeArray(T.decode)
     }

@@ -73,6 +73,10 @@ public struct JSON {
     
     
     // MARK: - Functions
+
+    public func decode<T>(transform: JSON -> T?) -> T? {
+        return transform(self)
+    }
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
         return (object as? [AnyObject])?.lazy
