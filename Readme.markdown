@@ -42,7 +42,7 @@ struct Author: JSONDecodable {
 }
 ```
 
-Now you can do `let author = JSON["author"].decode(Author)` to get a single author, or `let authors = JSON["authors"]?.decodeArray(Author)` to get an array of authors.
+Now you can do `let author = JSON["author"]?.decode(Author)` to get a single author, or `let authors = JSON["authors"]?.decodeArray(Author)` to get an array of authors.
 
 `JSON` has helpers for extracting dates, numbers, dictionaries, arrays, urls, and strings. You can also unpack nested objects like this: `let nextCursor = JSON["meta"]?["pagination"]?["next_cursor"]?.string`.
 
@@ -59,4 +59,32 @@ extension CGSize: JSONDecodable {
         return nil
     }
 }
+```
+
+### Enums / RawRepresentable
+
+You can also decode anything that conforms to the `RawRepresentable` type. For example, assume the following enum:
+
+```swift
+enum Planet: String {
+    case Mercury = "mercury"
+    case Venus = "venus"
+    case Earth = "earth"
+    case Mars = "mars"
+    case Jupiter = "jupiter"
+    case Saturn = "saturn"
+    case Uranus = "uranus"
+    case Neptune = "Neptune"
+    // case Pluto = "pluto" =(
+}
+```
+
+Because all Swift `enum` are `RawRepresentable`, you can do the following:
+
+```swift
+let planet = JSON["planet"]?.decode(Planet)
+```
+
+```swift
+let planets = JSON["planets"]?.decodeArray(Planet)
 ```
