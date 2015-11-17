@@ -73,6 +73,10 @@ public struct JSON {
     
     
     // MARK: - Functions
+
+    public func decode<T>(transform: JSON -> T?) -> T? {
+        return transform(self)
+    }
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
         return (object as? [AnyObject])?.lazy
@@ -105,4 +109,14 @@ extension JSON: CustomDebugStringConvertible {
         return "Invalid JSON."
     }
 
+}
+
+extension JSON {
+    func decode<T: RawRepresentable>(type: T.Type) -> T? {
+        return (object as? T.RawValue).flatMap(T.init)
+    }
+
+    func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
+        return (object as? [T.RawValue])?.lazy.map(T.init).flatMap({ $0 })
+    }
 }
