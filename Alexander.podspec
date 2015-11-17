@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Alexander'
-  spec.version      = '1.5'
+  spec.version      = '1.6'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage     = 'https://github.com/hodinkee/alexander'
-  spec.authors      =  { 'Caleb Davenport' => 'caleb@calebd.me' }
+  spec.authors      =  { 'Caleb Davenport' => 'caleb@calebd.me', 'Jonathan Baker' => 'jonathan@jonathanbaker.me' }
   spec.summary      = 'An extremely simple JSON helper written in Swift.'
   spec.source       =   { :git => 'https://github.com/hodinkee/alexander.git', :tag => "v#{spec.version}" }
   spec.source_files = 'Alexander/*.{swift}'
