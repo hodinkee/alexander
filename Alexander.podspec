@@ -9,7 +9,6 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Alexander/*.{swift}'
   spec.framework    = 'Foundation'
   spec.requires_arc = true
-  spec.social_media_url = 'https://twitter.com/calebd'
 
   spec.ios.deployment_target = '8.0'
   spec.watchos.deployment_target = '2.0'
