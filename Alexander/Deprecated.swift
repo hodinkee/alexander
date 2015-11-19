@@ -55,4 +55,14 @@ public extension Alexander.JSON {
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
         return decodeArray(T.decode)
     }
+
+    @available(*, deprecated, message = "Use decode(RawRepresentableDecoder<T>) instead.")
+    public func decode<T: RawRepresentable>(type: T.Type) -> T? {
+        return decode(RawRepresentableDecoder)
+    }
+
+    @available(*, deprecated, message = "Use decode(RawRepresentableDecoder<T>) instead.")
+    public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
+        return decodeArray(RawRepresentableDecoder)
+    }
 }

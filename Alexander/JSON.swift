@@ -74,14 +74,6 @@ public struct JSON {
             .map(transform)
             .flatMap({ $0 })
     }
-
-    public func decode<T: RawRepresentable>(type: T.Type) -> T? {
-        return (object as? T.RawValue).flatMap(T.init)
-    }
-
-    public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
-        return (object as? [T.RawValue])?.lazy.map(T.init).flatMap({ $0 })
-    }
 }
 
 extension JSON {

@@ -48,3 +48,10 @@ public struct NSURLDecoder: DecoderType {
         return JSON.stringValue.flatMap({ NSURL(string: $0) })
     }
 }
+
+public struct RawRepresentableDecoder<T: RawRepresentable>: DecoderType {
+    public typealias Value = T
+    public static func decode(JSON: Alexander.JSON) -> Value? {
+        return (JSON.object as? T.RawValue).flatMap(T.init)
+    }
+}

@@ -59,8 +59,8 @@ final class AlexanderTests: XCTestCase {
             case Fall = "fall"
         }
 
-        XCTAssertEqual(JSON(object: "summer").decode(Season), .Summer)
-        XCTAssertNil(JSON(object: "wrong").decode(Season))
+        XCTAssertEqual(JSON(object: "summer").decode(RawRepresentableDecoder<Season>), .Summer)
+        XCTAssertNil(JSON(object: "wrong").decode(RawRepresentableDecoder<Season>))
     }
 
     func testDecodeRawRepresentableArray() {
@@ -73,7 +73,7 @@ final class AlexanderTests: XCTestCase {
 
         let seasons = [ "winter", "summer", "spring", "wrong" ]
         let JSON = Alexander.JSON(object: seasons)
-        guard let decodedSeasons = JSON.decodeArray(Season) else {
+        guard let decodedSeasons = JSON.decodeArray(RawRepresentableDecoder<Season>) else {
             XCTFail()
             return
         }
