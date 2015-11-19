@@ -1,9 +1,9 @@
 //
 //  AlexanderTests.swift
-//  Alexander
+//  Alexander Tests
 //
 //  Created by Caleb Davenport on 11/18/15.
-//  Copyright © 2015 Hodinkee. All rights reserved.
+//  Copyright © 2015 HODINKEE. All rights reserved.
 //
 
 import XCTest

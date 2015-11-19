@@ -449,7 +449,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = Hodinkee;
+				ORGANIZATIONNAME = HODINKEE;
 				TargetAttributes = {
 					3A512ED81BE169910091A124 = {
 						CreatedOnToolsVersion = 7.1;
