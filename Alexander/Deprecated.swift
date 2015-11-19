@@ -12,13 +12,14 @@ extension JSON {
         return stringValue
     }
 
-    @available(*, deprecated, message = "Use intValue instead.")
+    @available(*, deprecated, message = "Use integerValue instead.")
     public var int: Int? {
-        return intValue
+        return integerValue
     }
 
+    @available(*, deprecated, message = "Use doubleValue instead.")
     public var double: Double? {
-        return object as? Double
+        return doubleValue
     }
 
     @available(*, deprecated, message = "Use boolValue instead.")

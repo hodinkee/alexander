@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AlexanderError: ErrorType {
+public enum Error: ErrorType {
     case InvalidObject
 }
 
@@ -53,8 +53,20 @@ public struct JSON {
         return object as? String
     }
 
-    public var intValue: Int? {
+    public var integerValue: Int? {
         return object as? Int
+    }
+
+    public var unsignedIntegerValue: UInt? {
+        return object as? UInt
+    }
+
+    public var doubleValue: Double? {
+        return object as? Double
+    }
+
+    public var floatValue: Float? {
+        return object as? Float
     }
 
     public var boolValue: Bool? {
@@ -85,7 +97,7 @@ extension JSON {
         if NSJSONSerialization.isValidJSONObject(object) {
             return try NSJSONSerialization.dataWithJSONObject(object, options: options)
         }
-        throw AlexanderError.InvalidObject
+        throw Error.InvalidObject
     }
 }
 
@@ -97,5 +109,11 @@ extension JSON: CustomDebugStringConvertible {
                 return String(string)
         }
         return "Invalid JSON."
+    }
+}
+
+extension JSON {
+    public var CGFloatValue: CGFloat? {
+        return object as? CGFloat
     }
 }
