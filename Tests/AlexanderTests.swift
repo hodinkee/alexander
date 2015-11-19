@@ -35,17 +35,17 @@ final class AlexanderTests: XCTestCase {
 
         let JSON = Alexander.JSON(object: dictionary)
 
-        XCTAssertEqual(JSON["double"]?.double, 9823.212)
-        XCTAssertEqual(JSON["int"]?.intValue, 42)
+        XCTAssertEqual(JSON["double"]?.doubleValue, 9823.212)
+        XCTAssertEqual(JSON["int"]?.integerValue, 42)
         XCTAssertEqual(JSON["string"]?.stringValue, "Caleb")
         XCTAssertEqual(JSON["bool"]?.boolValue, true)
 
         XCTAssertEqual(JSON["array"]?.array?.count, 2)
-        XCTAssertEqual(JSON["array"]?[0]?.double, 1234)
-        XCTAssertEqual(JSON["array"]?[1]?.double, 4.212)
+        XCTAssertEqual(JSON["array"]?[0]?.doubleValue, 1234)
+        XCTAssertEqual(JSON["array"]?[1]?.doubleValue, 4.212)
 
         XCTAssertEqual(JSON["object"]?.dictionary?.count, 2)
-        XCTAssertEqual(JSON["object"]?["double"]?.double, 877.2323)
+        XCTAssertEqual(JSON["object"]?["double"]?.doubleValue, 877.2323)
         XCTAssertEqual(JSON["object"]?["string"]?.stringValue, "Jon")
 
         XCTAssertNil(JSON["null"])
