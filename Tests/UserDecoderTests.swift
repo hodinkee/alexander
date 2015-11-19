@@ -35,7 +35,7 @@ final class UserDecoderTests: XCTestCase {
             ]
         ]
         let JSON = Alexander.JSON(object: object)
-        guard let decodedUsers = JSON["users"]?.decodeArray(UserDecoder) where decodedUsers.count == 2 else {
+        guard let decodedUsers = JSON["users"]?.decodeArray(UserDecoder) else {
             XCTFail()
             return
         }
