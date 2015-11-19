@@ -106,7 +106,6 @@ extension JSON: CustomDebugStringConvertible {
         }
         return "Invalid JSON."
     }
-
 }
 
 extension JSON {
@@ -129,17 +128,18 @@ extension JSON {
         return boolValue
     }
 
-    @available(*, deprecated, message = "Use decode(NSURL) instead.")
+    @available(*, deprecated, message = "Use decode(NSURLDecoder) instead.")
     public var url: NSURL? {
-        return decode(NSURL)
+        return decode(NSURLDecoder)
     }
 
+    @available(*, deprecated, message = "Use decode(NSTimeIntervalDecoder) instead.")
     public var timeInterval: NSTimeInterval? {
-        return object as? NSTimeInterval
+        return decode(NSTimeIntervalDecoder)
     }
 
-    @available(*, deprecated, message = "Use decode(NSDate) instead.")
+    @available(*, deprecated, message = "Use decode(NSDateTimeIntervalSince1970Decoder) instead.")
     public var date: NSDate? {
-        return decode(NSDate)
+        return decode(NSDateTimeIntervalSince1970Decoder)
     }
 }

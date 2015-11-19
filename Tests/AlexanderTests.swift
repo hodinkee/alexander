@@ -10,7 +10,6 @@ import XCTest
 import Alexander
 
 final class AlexanderTests: XCTestCase {
-
     func testArray() {
         let JSON = Alexander.JSON(object: ["1","2", "a", "B", "D"])
         XCTAssertEqual(JSON.array?.count, 5)
@@ -83,73 +82,10 @@ final class AlexanderTests: XCTestCase {
         XCTAssertEqual(decodedSeasons, [ Season.Winter, Season.Summer, Season.Spring ])
     }
 
-    func testValidDecodableObjectSingle() {
-        struct User: JSONDecodable {
-            var ID: String
-            var name: String
-
-            static func decode(JSON: Alexander.JSON) -> User? {
-                guard let ID = JSON["id"]?.stringValue, let name = JSON["name"]?.stringValue else {
-                    return nil
-                }
-                return User(ID: ID, name: name)
-            }
-        }
-
-        let user = User(ID: "1", name: "Caleb")
-        let object = [ "id": user.ID, "name": user.name ]
-        let JSON = Alexander.JSON(object: object)
-        guard let decodedUser = JSON.decode(User) else {
-            XCTFail()
-            return
-        }
-
-        XCTAssertEqual(decodedUser.ID, user.ID)
-        XCTAssertEqual(decodedUser.name, user.name)
-    }
-
-    func testValidDecodableObjectArray() {
-        struct User: JSONDecodable {
-            var ID: String
-            var name: String
-
-            static func decode(JSON: Alexander.JSON) -> User? {
-                guard let ID = JSON["id"]?.stringValue, let name = JSON["name"]?.stringValue else {
-                    return nil
-                }
-                return User(ID: ID, name: name)
-            }
-        }
-
-        let users = [
-            User(ID: "1", name: "Caleb"),
-            User(ID: "2", name: "Jon")
-        ]
-        let object = [
-            "users": [
-                [ "id": users[0].ID, "name": users[0].name ],
-                [ "id": users[1].ID, "name": users[1].name ]
-            ]
-        ]
-        let JSON = Alexander.JSON(object: object)
-        guard let decodedUsers = JSON["users"]?.decodeArray(User) else {
-            XCTFail()
-            return
-        }
-
-        XCTAssertEqual(decodedUsers.count, 2)
-
-        XCTAssertEqual(decodedUsers[0].ID, users[0].ID)
-        XCTAssertEqual(decodedUsers[0].name, users[0].name)
-
-        XCTAssertEqual(decodedUsers[1].ID, users[1].ID)
-        XCTAssertEqual(decodedUsers[1].name, users[1].name)
-    }
-
     func testURLHelpers() {
         let JSON = Alexander.JSON(object: "https://www.hodinkee.com")
 
-        guard let URL = JSON.decode(NSURL) else {
+        guard let URL = JSON.decode(NSURLDecoder) else {
             XCTFail()
             return
         }
@@ -159,7 +95,7 @@ final class AlexanderTests: XCTestCase {
 
     func testDateHelpers() {
         let JSON = Alexander.JSON(object: 978307200)
-        XCTAssertEqual(JSON.timeInterval, NSDate(timeIntervalSinceReferenceDate: 0).timeIntervalSince1970)
-        XCTAssertEqual(JSON.decode(NSDate), NSDate(timeIntervalSinceReferenceDate: 0))
+        XCTAssertEqual(JSON.decode(NSTimeIntervalDecoder), NSDate(timeIntervalSinceReferenceDate: 0).timeIntervalSince1970)
+        XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder), NSDate(timeIntervalSinceReferenceDate: 0))
     }
 }

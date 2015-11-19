@@ -10,6 +10,7 @@ public protocol JSONEncodable {
     var JSON: Alexander.JSON { get }
 }
 
+@available(*, deprecated, message = "Use DecoderType instead.")
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
 }
@@ -21,17 +22,5 @@ public extension Alexander.JSON {
 
     public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
         return decodeArray(T.decode)
-    }
-}
-
-extension NSURL: JSONDecodable {
-    public static func decode(JSON: Alexander.JSON) -> Self? {
-        return JSON.stringValue.flatMap(self.init)
-    }
-}
-
-extension NSDate: JSONDecodable {
-    public static func decode(JSON: Alexander.JSON) -> Self? {
-        return (JSON.object as? NSTimeInterval).flatMap({ self.init(timeIntervalSince1970: $0) })
     }
 }

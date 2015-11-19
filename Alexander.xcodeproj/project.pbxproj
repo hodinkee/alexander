@@ -22,6 +22,13 @@
 		3AE5C3941BFD3EBC00F1080F /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */; };
 		3AE5C3951BFD3EBC00F1080F /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */; };
 		3AE5C3961BFD3EBC00F1080F /* AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */; };
+		3AE5C39C1BFD522300F1080F /* DecoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C39B1BFD522300F1080F /* DecoderType.swift */; };
+		3AE5C39D1BFD522300F1080F /* DecoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C39B1BFD522300F1080F /* DecoderType.swift */; };
+		3AE5C39E1BFD522300F1080F /* DecoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C39B1BFD522300F1080F /* DecoderType.swift */; };
+		3AE5C39F1BFD522300F1080F /* DecoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C39B1BFD522300F1080F /* DecoderType.swift */; };
+		3AE5C3A11BFD551800F1080F /* UserDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */; };
+		3AE5C3A21BFD551800F1080F /* UserDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */; };
+		3AE5C3A31BFD551800F1080F /* UserDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */; };
 		3B62AAD91B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADA1B82452800491A67 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3B62AADC1B824C1200491A67 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AADB1B824C1200491A67 /* JSONCodable.swift */; };
@@ -71,6 +78,8 @@
 		3A512F101BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512F121BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
+		3AE5C39B1BFD522300F1080F /* DecoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoderType.swift; sourceTree = "<group>"; };
+		3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDecoderTests.swift; sourceTree = "<group>"; };
 		3B62AAD81B82452800491A67 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		3B62AADB1B824C1200491A67 /* JSONCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
 		3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */,
+				3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */,
 				3A512F0C1BE16BB60091A124 /* Configuration */,
 			);
 			path = Tests;
@@ -253,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */,
+				3AE5C39B1BFD522300F1080F /* DecoderType.swift */,
 				3B62AADB1B824C1200491A67 /* JSONCodable.swift */,
 				3B62AAD81B82452800491A67 /* Defines.swift */,
 				3A512EC91BE168C30091A124 /* Configuration */,
@@ -537,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE5C39E1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3A512F051BE16B250091A124 /* JSONCodable.swift in Sources */,
 				3A512F041BE16B250091A124 /* JSON.swift in Sources */,
 				3A512F061BE16B250091A124 /* Defines.swift in Sources */,
@@ -548,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE5C3961BFD3EBC00F1080F /* AlexanderTests.swift in Sources */,
+				3AE5C3A31BFD551800F1080F /* UserDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE5C39F1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3A512F081BE16B250091A124 /* JSONCodable.swift in Sources */,
 				3A512F071BE16B250091A124 /* JSON.swift in Sources */,
 				3A512F091BE16B250091A124 /* Defines.swift in Sources */,
@@ -565,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE5C39C1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3B62AAD91B82452800491A67 /* Defines.swift in Sources */,
 				3B62AADC1B824C1200491A67 /* JSONCodable.swift in Sources */,
 				3BEDAE5D1B5DC4B200AD52FE /* JSON.swift in Sources */,
@@ -576,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE5C3941BFD3EBC00F1080F /* AlexanderTests.swift in Sources */,
+				3AE5C3A11BFD551800F1080F /* UserDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE5C39D1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3B62AADA1B82452800491A67 /* Defines.swift in Sources */,
 				3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */,
 				3A512EC81BE15A380091A124 /* JSONCodable.swift in Sources */,
@@ -594,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE5C3951BFD3EBC00F1080F /* AlexanderTests.swift in Sources */,
+				3AE5C3A21BFD551800F1080F /* UserDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
