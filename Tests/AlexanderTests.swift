@@ -145,4 +145,17 @@ final class AlexanderTests: XCTestCase {
         XCTAssertEqual(decodedUsers[1].ID, users[1].ID)
         XCTAssertEqual(decodedUsers[1].name, users[1].name)
     }
+
+    func testURLHelpers() {
+        let JSON = Alexander.JSON(object: "https://www.hodinkee.com")
+        let URL = JSON.url
+        XCTAssertNotNil(URL)
+        XCTAssertEqual(URL, NSURL(string: "https://www.hodinkee.com"))
+    }
+
+    func testDateHelpers() {
+        let JSON = Alexander.JSON(object: 978307200)
+        XCTAssertEqual(JSON.timeInterval, NSDate(timeIntervalSinceReferenceDate: 0).timeIntervalSince1970)
+        XCTAssertEqual(JSON.date, NSDate(timeIntervalSinceReferenceDate: 0))
+    }
 }
