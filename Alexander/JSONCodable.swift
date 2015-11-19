@@ -23,3 +23,15 @@ public extension Alexander.JSON {
         return decodeArray(T.decode)
     }
 }
+
+extension NSURL: JSONDecodable {
+    public static func decode(JSON: Alexander.JSON) -> Self? {
+        return JSON.stringValue.flatMap(self.init)
+    }
+}
+
+extension NSDate: JSONDecodable {
+    public static func decode(JSON: Alexander.JSON) -> Self? {
+        return (JSON.object as? NSTimeInterval).flatMap({ self.init(timeIntervalSince1970: $0) })
+    }
+}

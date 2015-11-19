@@ -25,6 +25,22 @@ public struct JSON {
     
     public var object: AnyObject
 
+    public var array: [JSON]? {
+        return arrayValue?.map({ JSON(object: $0) })
+    }
+
+    public var dictionary: [String: JSON]? {
+        return dictionaryValue?.mapValues({ JSON(object: $0) })
+    }
+
+    public var arrayValue: [AnyObject]? {
+        return object as? [AnyObject]
+    }
+
+    public var dictionaryValue: [String: AnyObject]? {
+        return object as? [String: AnyObject]
+    }
+
     public subscript(index: Int) -> JSON? {
         let array = object as? [AnyObject]
         return (array?[index]).map({ JSON(object: $0) })
@@ -35,40 +51,16 @@ public struct JSON {
         return (dictionary?[key]).map({ JSON(object: $0) })
     }
 
-    public var string: String? {
+    public var stringValue: String? {
         return object as? String
     }
 
-    public var dictionary: [String: JSON]? {
-        return (object as? [String: AnyObject])?.mapValues({ JSON(object: $0) })
-    }
-
-    public var array: [JSON]? {
-        return (object as? [AnyObject])?.map({ JSON(object: $0) })
-    }
-
-    public var int: Int? {
+    public var intValue: Int? {
         return object as? Int
     }
 
-    public var double: Double? {
-        return object as? Double
-    }
-
-    public var bool: Bool? {
+    public var boolValue: Bool? {
         return object as? Bool
-    }
-
-    public var url: NSURL? {
-        return string.flatMap({ NSURL(string: $0) })
-    }
-
-    public var timeInterval: NSTimeInterval? {
-        return object as? NSTimeInterval
-    }
-
-    public var date: NSDate? {
-        return timeInterval.map({ NSDate(timeIntervalSince1970: $0) })
     }
     
     
@@ -83,6 +75,14 @@ public struct JSON {
             .map(JSON.init)
             .map(transform)
             .flatMap({ $0 })
+    }
+
+    public func decode<T: RawRepresentable>(type: T.Type) -> T? {
+        return (object as? T.RawValue).flatMap(T.init)
+    }
+
+    public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
+        return (object as? [T.RawValue])?.lazy.map(T.init).flatMap({ $0 })
     }
 }
 
@@ -112,11 +112,36 @@ extension JSON: CustomDebugStringConvertible {
 }
 
 extension JSON {
-    public func decode<T: RawRepresentable>(type: T.Type) -> T? {
-        return (object as? T.RawValue).flatMap(T.init)
+    @available(*, deprecated, message = "Use stringValue instead.")
+    public var string: String? {
+        return stringValue
     }
 
-    public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
-        return (object as? [T.RawValue])?.lazy.map(T.init).flatMap({ $0 })
+    @available(*, deprecated, message = "Use intValue instead.")
+    public var int: Int? {
+        return intValue
+    }
+
+    public var double: Double? {
+        return object as? Double
+    }
+
+    @available(*, deprecated, message = "Use boolValue instead.")
+    public var bool: Bool? {
+        return boolValue
+    }
+
+    @available(*, deprecated, message = "Use decode(NSURL) instead.")
+    public var url: NSURL? {
+        return decode(NSURL)
+    }
+
+    public var timeInterval: NSTimeInterval? {
+        return object as? NSTimeInterval
+    }
+
+    @available(*, deprecated, message = "Use decode(NSDate) instead.")
+    public var date: NSDate? {
+        return decode(NSDate)
     }
 }
