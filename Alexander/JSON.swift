@@ -42,13 +42,11 @@ public struct JSON {
     }
 
     public subscript(index: Int) -> JSON? {
-        let array = object as? [AnyObject]
-        return (array?[index]).map({ JSON(object: $0) })
+        return (arrayValue?[index]).map({ JSON(object: $0) })
     }
 
     public subscript(key: String) -> JSON? {
-        let dictionary = object as? [String: AnyObject]
-        return (dictionary?[key]).map({ JSON(object: $0) })
+        return (dictionaryValue?[key]).map({ JSON(object: $0) })
     }
 
     public var stringValue: String? {
