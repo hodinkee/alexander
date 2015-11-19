@@ -107,39 +107,3 @@ extension JSON: CustomDebugStringConvertible {
         return "Invalid JSON."
     }
 }
-
-extension JSON {
-    @available(*, deprecated, message = "Use stringValue instead.")
-    public var string: String? {
-        return stringValue
-    }
-
-    @available(*, deprecated, message = "Use intValue instead.")
-    public var int: Int? {
-        return intValue
-    }
-
-    public var double: Double? {
-        return object as? Double
-    }
-
-    @available(*, deprecated, message = "Use boolValue instead.")
-    public var bool: Bool? {
-        return boolValue
-    }
-
-    @available(*, deprecated, message = "Use decode(NSURLDecoder) instead.")
-    public var url: NSURL? {
-        return decode(NSURLDecoder)
-    }
-
-    @available(*, deprecated, message = "Use decode(NSTimeIntervalDecoder) instead.")
-    public var timeInterval: NSTimeInterval? {
-        return decode(NSTimeIntervalDecoder)
-    }
-
-    @available(*, deprecated, message = "Use decode(NSDateTimeIntervalSince1970Decoder) instead.")
-    public var date: NSDate? {
-        return decode(NSDateTimeIntervalSince1970Decoder)
-    }
-}
