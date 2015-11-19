@@ -9,18 +9,3 @@
 public protocol JSONEncodable {
     var JSON: Alexander.JSON { get }
 }
-
-@available(*, deprecated, message = "Use DecoderType instead.")
-public protocol JSONDecodable {
-    static func decode(JSON: Alexander.JSON) -> Self?
-}
-
-public extension Alexander.JSON {
-    public func decode<T: JSONDecodable>(type: T.Type) -> T? {
-        return decode(T.decode)
-    }
-
-    public func decodeArray<T: JSONDecodable>(type: T.Type) -> [T]? {
-        return decodeArray(T.decode)
-    }
-}
