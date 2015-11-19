@@ -42,7 +42,7 @@ extension JSON {
     }
 }
 
-@available(*, deprecated, message = "Use DecoderType instead.")
+@available(*, deprecated, message = "Use Alexander.DecoderType instead.")
 public protocol JSONDecodable {
     static func decode(JSON: Alexander.JSON) -> Self?
 }
@@ -65,4 +65,9 @@ public extension Alexander.JSON {
     public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
         return decodeArray(RawRepresentableDecoder)
     }
+}
+
+@available(*, deprecated, message = "Use Alexander.EncoderType instead.")
+public protocol JSONEncodable {
+    var JSON: Alexander.JSON { get }
 }
