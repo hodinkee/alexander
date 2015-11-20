@@ -21,6 +21,7 @@ extension JSON {
     }
 }
 
+/// Decodes the given `JSON` as a `NSTimeInterval`.
 public struct NSTimeIntervalDecoder: DecoderType {
     public typealias Value = NSTimeInterval
     public static func decode(JSON: Alexander.JSON) -> Value? {
@@ -28,6 +29,9 @@ public struct NSTimeIntervalDecoder: DecoderType {
     }
 }
 
+/// Decodes the given `JSON` into a `NSDate`.
+///
+/// - SeeAlso: `NSDate(timeIntervalSince1970:)`
 public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
     public typealias Value = NSDate
     public static func decode(JSON: Alexander.JSON) -> Value? {
@@ -35,6 +39,9 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
     }
 }
 
+/// Decodes the given `JSON` into a `NSDate`.
+///
+/// - SeeAlso: `NSDate(timeIntervalSinceReferenceDate:)`
 public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     public typealias Value = NSDate
     public static func decode(JSON: Alexander.JSON) -> Value? {
@@ -42,6 +49,9 @@ public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     }
 }
 
+/// Decodes the given `JSON` into a `NSURL`.
+///
+/// - SeeAlso: `NSURL(string:)`
 public struct NSURLDecoder: DecoderType {
     public typealias Value = NSURL
     public static func decode(JSON: Alexander.JSON) -> Value? {
@@ -49,6 +59,11 @@ public struct NSURLDecoder: DecoderType {
     }
 }
 
+/// Decodes the given `JSON` into a type (`T`) that conforms to `RawRepresentable`.
+///
+/// For example: `let season = JSON.decode(RawRepresentableDecoder<Season>)`
+///
+/// - SeeAlso: `RawRepresentable(rawValue:)`
 public struct RawRepresentableDecoder<T: RawRepresentable>: DecoderType {
     public typealias Value = T
     public static func decode(JSON: Alexander.JSON) -> Value? {
