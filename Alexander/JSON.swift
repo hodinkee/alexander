@@ -3,12 +3,13 @@
 //  Alexander
 //
 //  Created by Caleb Davenport on 6/24/15.
-//  Copyright (c) 2015 Hodinkee. All rights reserved.
+//  Copyright © 2015 HODINKEE. All rights reserved.
 //
 
 import Foundation
+import CoreGraphics
 
-enum AlexanderError: ErrorType {
+public enum Error: ErrorType {
     case InvalidObject
 }
 
@@ -25,50 +26,52 @@ public struct JSON {
     
     public var object: AnyObject
 
-    public subscript(index: Int) -> JSON? {
-        let array = object as? [AnyObject]
-        return (array?[index]).map({ JSON(object: $0) })
-    }
-
-    public subscript(key: String) -> JSON? {
-        let dictionary = object as? [String: AnyObject]
-        return (dictionary?[key]).map({ JSON(object: $0) })
-    }
-
-    public var string: String? {
-        return object as? String
+    public var array: [JSON]? {
+        return arrayValue?.map({ JSON(object: $0) })
     }
 
     public var dictionary: [String: JSON]? {
-        return (object as? [String: AnyObject])?.mapValues({ JSON(object: $0) })
+        return dictionaryValue?.mapValues({ JSON(object: $0) })
     }
 
-    public var array: [JSON]? {
-        return (object as? [AnyObject])?.map({ JSON(object: $0) })
+    public var arrayValue: [AnyObject]? {
+        return object as? [AnyObject]
     }
 
-    public var int: Int? {
+    public var dictionaryValue: [String: AnyObject]? {
+        return object as? [String: AnyObject]
+    }
+
+    public subscript(index: Int) -> JSON? {
+        return (arrayValue?[index]).map({ JSON(object: $0) })
+    }
+
+    public subscript(key: String) -> JSON? {
+        return (dictionaryValue?[key]).map({ JSON(object: $0) })
+    }
+
+    public var stringValue: String? {
+        return object as? String
+    }
+
+    public var integerValue: Int? {
         return object as? Int
     }
 
-    public var double: Double? {
+    public var unsignedIntegerValue: UInt? {
+        return object as? UInt
+    }
+
+    public var doubleValue: Double? {
         return object as? Double
     }
 
-    public var bool: Bool? {
+    public var floatValue: Float? {
+        return object as? Float
+    }
+
+    public var boolValue: Bool? {
         return object as? Bool
-    }
-
-    public var url: NSURL? {
-        return string.flatMap({ NSURL(string: $0) })
-    }
-
-    public var timeInterval: NSTimeInterval? {
-        return object as? NSTimeInterval
-    }
-
-    public var date: NSDate? {
-        return timeInterval.map({ NSDate(timeIntervalSince1970: $0) })
     }
     
     
@@ -95,7 +98,7 @@ extension JSON {
         if NSJSONSerialization.isValidJSONObject(object) {
             return try NSJSONSerialization.dataWithJSONObject(object, options: options)
         }
-        throw AlexanderError.InvalidObject
+        throw Error.InvalidObject
     }
 }
 
@@ -108,15 +111,14 @@ extension JSON: CustomDebugStringConvertible {
         }
         return "Invalid JSON."
     }
-
 }
 
 extension JSON {
-    public func decode<T: RawRepresentable>(type: T.Type) -> T? {
-        return (object as? T.RawValue).flatMap(T.init)
+    public var CGFloatValue: CGFloat? {
+        return object as? CGFloat
     }
 
-    public func decodeArray<T: RawRepresentable>(type: T.Type) -> [T]? {
-        return (object as? [T.RawValue])?.lazy.map(T.init).flatMap({ $0 })
+    public var numberValue: NSNumber? {
+        return object as? NSNumber
     }
 }
