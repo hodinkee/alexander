@@ -11,6 +11,9 @@ public protocol EncoderType {
     static func encode(value: Value) -> JSON
 }
 
+/// Encodes the given `NSDate` into a primative `JSON` type.
+///
+/// - SeeAlso: `NSDate.timeIntervalSince1970`
 public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
     public typealias Value = NSDate
     public static func encode(value: NSDate) -> JSON {
@@ -18,6 +21,9 @@ public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
     }
 }
 
+/// Encodes the given `NSDate` into a primative `JSON` type.
+///
+/// - SeeAlso: `NSDate.timeIntervalSinceReferenceDate`
 public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
     public typealias Value = NSDate
     public static func encode(value: NSDate) -> JSON {
@@ -25,6 +31,9 @@ public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
     }
 }
 
+/// Encodes the given `NSURL` into a primative `JSON` type.
+///
+/// - SeeAlso: `NSURL.absoluteString`
 public struct NSURLEncoder: EncoderType {
     public typealias Value = NSURL
     public static func encode(value: NSURL) -> JSON {
