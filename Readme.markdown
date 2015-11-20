@@ -12,6 +12,8 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 ## Usage
 
+### DecoderType
+
 Make a new `DecoderType` that can unpack your object.
 
 ```swift
@@ -56,7 +58,16 @@ struct SizeDecoder {
 }
 ```
 
-Alexander has helpers for decoding dates, numbers, dictionaries, arrays, URLs, and strings. You can also unpack nested objects like this: `let nextCursor = JSON["meta"]?["pagination"]?["next_cursor"]?.stringValue`.
+Alexander ships with a handful of decoders for common types:
+
+- `NSDateTimeIntervalSince1970Decoder`
+- `NSDateTimeIntervalSinceReferenceDateDecoder`
+- `NSURLDecoder`
+- `RawRepresentableDecoder`
+
+### Nested Objects
+
+Most of Alexander's power comes from its two subscript operators: `subscript[key: String] -> JSON?` and `subscript[index: Int] -> JSON?`. These operators allow you to unpack nested objects without having to refer to each intermediate step by hand. Something like `let nextCursor = JSON["meta"]?["pagination"]?["next_cursor"]?.stringValue` is a single line of code.
 
 ### Enums & RawRepresentable
 
