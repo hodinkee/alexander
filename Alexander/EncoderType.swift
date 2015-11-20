@@ -31,3 +31,9 @@ public struct NSURLEncoder: EncoderType {
         return JSON(object: value.absoluteString)
     }
 }
+
+extension EncoderType {
+    public static func encode<S: SequenceType where S.Generator.Element == Value>(sequence: S) -> JSON {
+        return JSON(object: sequence.map({ encode($0).object }))
+    }
+}
