@@ -7,64 +7,58 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 ## Installation
 
-[Carthage](https://github.com/carthage/carthage):
-
-```
-github "hodinkee/alexander"
-```
-
-[CocoaPods](https://github.com/cocoapods/cocoapods):
-
-```
-pod "Alexander"
-```
+- [Carthage](https://github.com/carthage/carthage): `github "hodinkee/alexander"`
+- [CocoaPods](https://github.com/cocoapods/cocoapods): `pod "Alexander"`
 
 ## Usage
 
-Make your object conform to the `JSONDecodable` protocol.
+Make a new `DecoderType` that can unpack your object.
 
 ```swift
-struct Author: JSONDecodable {
-    let id: String
-    let name: String
-    let imageURL: String
-    let summary: String?
-    let title: String?
+struct User {
+    var ID: String
+    var name: String
+    var email: String
+}
 
-    static func decode(JSON: Alexander.JSON) -> Author? {
-        if
-            let id = JSON["id"]?.string,
-            let name = JSON["name"]?.string,
-            let imageURL = JSON["avatar_url"]?.string {
-                let summary = JSON["description"]?.string
-                let title = JSON["title"]?.string
-                return Author(id: id, name: name, imageURL: imageURL, summary: summary, title: title)
+struct UserDecoder: DecoderType {
+    typealias Value = User
+    static func decode(JSON: Alexander.JSON) -> Value? {
+        guard
+            let ID = JSON["id"]?.stringValue,
+            let name = JSON["name"]?.stringValue,
+            let email = JSON["email"]?.stringValue
+        else {
+            return nil
         }
-        return nil
+        return User(ID: ID, name: name, email: email)
+    }
+}
+
+```
+
+Now you can do `let author = JSON["user"]?.decode(UserDecoder)` to get a single user, or `let users = JSON["users"]?.decodeArray(UserDecoder)` to get an array of users.
+
+You can make `DecodableType`s for all kinds of things.
+
+```swift
+struct SizeDecoder {
+    typealias Value = CGSize
+    static func decode(JSON: Alexander.JSON) -> Value? {
+        guard
+            let width = JSON["width"]?.CGFloatValue,
+            let height = JSON["height"]?.CGFloatValue
+        else {
+            return nil
+        }
+        return CGSize(width: width, height: height)
     }
 }
 ```
 
-Now you can do `let author = JSON["author"]?.decode(Author)` to get a single author, or `let authors = JSON["authors"]?.decodeArray(Author)` to get an array of authors.
+Alexander has helpers for decoding dates, numbers, dictionaries, arrays, URLs, and strings. You can also unpack nested objects like this: `let nextCursor = JSON["meta"]?["pagination"]?["next_cursor"]?.stringValue`.
 
-`JSON` has helpers for extracting dates, numbers, dictionaries, arrays, urls, and strings. You can also unpack nested objects like this: `let nextCursor = JSON["meta"]?["pagination"]?["next_cursor"]?.string`.
-
-You can add `JSONDecodable` to other types as well. Like this:
-
-```swift
-extension CGSize: JSONDecodable {
-    static func decode(JSON: Alexander.JSON) -> CGSize? {
-        if
-            let width = JSON["width"]?.object as? CGFloat,
-            let height = JSON["height"]?.object as? CGFloat {
-                return CGSize(width: width, height: height)
-        }
-        return nil
-    }
-}
-```
-
-### Enums / RawRepresentable
+### Enums & RawRepresentable
 
 You can also decode anything that conforms to the `RawRepresentable` type. For example, assume the following enum:
 
@@ -82,4 +76,4 @@ enum Planet: String {
 }
 ```
 
-Because `Planet` is backed by a `String` raw value type, it is inheriently `RawRepresentable`. This means you can do `let planet = JSON["planet"]?.decode(Planet)` or `let planets = JSON["planets"]?.decodeArray(Planet)`.
+Because `Planet` is backed by a `String` raw value type, it is inheriently `RawRepresentable`. This means you can do `let planet = JSON["planet"]?.decode(RawRepresentableDecoder<Planet>)` or `let planets = JSON["planets"]?.decodeArray(RawRepresentableDecoder<Planet>)`.
