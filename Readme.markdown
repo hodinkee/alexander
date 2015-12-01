@@ -6,12 +6,19 @@
 
 Alexander is an extremely simple JSON helper written in Swift. It brings type safety and Foundation helpers to the cumbersome task of JSON unpacking.
 
-## Installation
+## Installing
 
 - [Carthage](https://github.com/carthage/carthage): `github "hodinkee/alexander"`
 - [CocoaPods](https://github.com/cocoapods/cocoapods): `pod "Alexander"`
 
-## Usage
+## Building
+
+```sh
+$ git submodule update --init --recursive
+$ open Alexander.xcodeproj
+```
+
+## Using
 
 ### DecoderType
 
