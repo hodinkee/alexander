@@ -706,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A4058BA1C0D249100D1ED83 /* tvOS-Framework.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvsimulator*]" = "";
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
@@ -718,6 +719,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A4058BA1C0D249100D1ED83 /* tvOS-Framework.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvsimulator*]" = "";
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
@@ -730,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A4058BF1C0D249100D1ED83 /* watchOS-Framework.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchsimulator*]" = "";
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
@@ -742,6 +745,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A4058BF1C0D249100D1ED83 /* watchOS-Framework.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchsimulator*]" = "";
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
