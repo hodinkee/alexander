@@ -16,10 +16,6 @@
 		3A512F061BE16B250091A124 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
 		3A512F071BE16B250091A124 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
 		3A512F091BE16B250091A124 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62AAD81B82452800491A67 /* Defines.swift */; };
-		3AA08DDA1BFE417C001BCA4D /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DD91BFE417C001BCA4D /* Deprecated.swift */; };
-		3AA08DDB1BFE417C001BCA4D /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DD91BFE417C001BCA4D /* Deprecated.swift */; };
-		3AA08DDC1BFE417C001BCA4D /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DD91BFE417C001BCA4D /* Deprecated.swift */; };
-		3AA08DDD1BFE417C001BCA4D /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DD91BFE417C001BCA4D /* Deprecated.swift */; };
 		3AA08DDF1BFE4FCD001BCA4D /* EncoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */; };
 		3AA08DE01BFE4FCD001BCA4D /* EncoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */; };
 		3AA08DE11BFE4FCD001BCA4D /* EncoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */; };
@@ -81,7 +77,6 @@
 		3A512F0E1BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512F101BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512F121BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AA08DD91BFE417C001BCA4D /* Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 		3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncoderType.swift; sourceTree = "<group>"; };
 		3AA3087F1C62C25B004B06C3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3AA308811C62C25B004B06C3 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -462,7 +457,6 @@
 				3AE5C39B1BFD522300F1080F /* DecoderType.swift */,
 				3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */,
 				3B62AAD81B82452800491A67 /* Defines.swift */,
-				3AA08DD91BFE417C001BCA4D /* Deprecated.swift */,
 				3A512EC91BE168C30091A124 /* Configuration */,
 			);
 			path = Alexander;
@@ -747,7 +741,6 @@
 			files = (
 				3AE5C39E1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DE11BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
-				3AA08DDC1BFE417C001BCA4D /* Deprecated.swift in Sources */,
 				3A512F041BE16B250091A124 /* JSON.swift in Sources */,
 				3A512F061BE16B250091A124 /* Defines.swift in Sources */,
 			);
@@ -768,7 +761,6 @@
 			files = (
 				3AE5C39F1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DE21BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
-				3AA08DDD1BFE417C001BCA4D /* Deprecated.swift in Sources */,
 				3A512F071BE16B250091A124 /* JSON.swift in Sources */,
 				3A512F091BE16B250091A124 /* Defines.swift in Sources */,
 			);
@@ -781,7 +773,6 @@
 				3AE5C39C1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3B62AAD91B82452800491A67 /* Defines.swift in Sources */,
 				3AA08DDF1BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
-				3AA08DDA1BFE417C001BCA4D /* Deprecated.swift in Sources */,
 				3BEDAE5D1B5DC4B200AD52FE /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,7 +793,6 @@
 				3AE5C39D1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3B62AADA1B82452800491A67 /* Defines.swift in Sources */,
 				3AA08DE01BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
-				3AA08DDB1BFE417C001BCA4D /* Deprecated.swift in Sources */,
 				3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
