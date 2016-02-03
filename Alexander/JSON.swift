@@ -112,13 +112,3 @@ extension JSON: CustomDebugStringConvertible {
         return "Invalid JSON."
     }
 }
-
-extension JSON {
-    public var CGFloatValue: CGFloat? {
-        return object as? CGFloat
-    }
-
-    public var numberValue: NSNumber? {
-        return object as? NSNumber
-    }
-}

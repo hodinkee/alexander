@@ -21,19 +21,12 @@ extension JSON {
     }
 }
 
-/// Decodes the given `JSON` as a `NSTimeInterval`.
-public struct NSTimeIntervalDecoder: DecoderType {
-    public static func decode(JSON: Alexander.JSON) -> NSTimeInterval? {
-        return JSON.object as? NSTimeInterval
-    }
-}
-
 /// Decodes the given `JSON` into a `NSDate`.
 ///
 /// - SeeAlso: `NSDate(timeIntervalSince1970:)`
 public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
     public static func decode(JSON: Alexander.JSON) -> NSDate? {
-        return JSON.decode(NSTimeIntervalDecoder).flatMap({ NSDate(timeIntervalSince1970: $0) })
+        return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSince1970: $0) })
     }
 }
 
@@ -42,7 +35,7 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
 /// - SeeAlso: `NSDate(timeIntervalSinceReferenceDate:)`
 public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     public static func decode(JSON: Alexander.JSON) -> NSDate? {
-        return JSON.decode(NSTimeIntervalDecoder).flatMap({ NSDate(timeIntervalSinceReferenceDate: $0) })
+        return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSinceReferenceDate: $0) })
     }
 }
 

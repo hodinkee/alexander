@@ -95,7 +95,6 @@ final class AlexanderTests: XCTestCase {
 
     func testDateHelpers() {
         let JSON = Alexander.JSON(object: 978307200)
-        XCTAssertEqual(JSON.decode(NSTimeIntervalDecoder), NSDate(timeIntervalSinceReferenceDate: 0).timeIntervalSince1970)
         XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder), NSDate(timeIntervalSinceReferenceDate: 0))
     }
 }
