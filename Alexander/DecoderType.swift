@@ -12,10 +12,13 @@ public protocol DecoderType {
 }
 
 extension JSON {
+
+    /// Turn the receiver into a single `T.Value`.
     public func decode<T: DecoderType>(decoder: T.Type) -> T.Value? {
         return decode(T.decode)
     }
 
+    /// Turn the receiver into an array of `T.Value`
     public func decodeArray<T: DecoderType>(decoder: T.Type) -> [T.Value]? {
         return decodeArray(T.decode)
     }
