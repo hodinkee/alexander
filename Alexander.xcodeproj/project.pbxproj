@@ -83,6 +83,45 @@
 		3A512F121BE16BB60091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA08DD91BFE417C001BCA4D /* Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 		3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncoderType.swift; sourceTree = "<group>"; };
+		3AA3087F1C62C25B004B06C3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3AA308811C62C25B004B06C3 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		3AA308831C62C25B004B06C3 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		3AA308841C62C25B004B06C3 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		3AA308851C62C25B004B06C3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		3AA308861C62C25B004B06C3 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		3AA308881C62C25B004B06C3 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		3AA308891C62C25B004B06C3 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		3AA3088A1C62C25B004B06C3 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		3AA3088E1C62C25B004B06C3 /* 786365BD-ECBF-3DA8-9CA5-03AA56FAFA10.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "786365BD-ECBF-3DA8-9CA5-03AA56FAFA10.bcsymbolmap"; sourceTree = "<group>"; };
+		3AA3088F1C62C25B004B06C3 /* Alexander.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alexander.framework; sourceTree = "<group>"; };
+		3AA308901C62C25B004B06C3 /* Alexander.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alexander.framework.dSYM; sourceTree = "<group>"; };
+		3AA308911C62C25B004B06C3 /* ECC6CF6C-679E-32E0-808A-5E6802848E60.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ECC6CF6C-679E-32E0-808A-5E6802848E60.bcsymbolmap"; sourceTree = "<group>"; };
+		3AA308931C62C25B004B06C3 /* Alexander.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alexander.framework; sourceTree = "<group>"; };
+		3AA308941C62C25B004B06C3 /* Alexander.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alexander.framework.dSYM; sourceTree = "<group>"; };
+		3AA308961C62C25B004B06C3 /* Alexander.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alexander.framework; sourceTree = "<group>"; };
+		3AA308971C62C25B004B06C3 /* Alexander.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alexander.framework.dSYM; sourceTree = "<group>"; };
+		3AA308981C62C25B004B06C3 /* B72DDD5F-0D98-396D-8F44-D558DBCC71A8.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "B72DDD5F-0D98-396D-8F44-D558DBCC71A8.bcsymbolmap"; sourceTree = "<group>"; };
+		3AA3089A1C62C25B004B06C3 /* 9B950C85-EC6C-31E7-BCF2-8EACC835369E.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "9B950C85-EC6C-31E7-BCF2-8EACC835369E.bcsymbolmap"; sourceTree = "<group>"; };
+		3AA3089B1C62C25B004B06C3 /* Alexander.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alexander.framework; sourceTree = "<group>"; };
+		3AA3089C1C62C25B004B06C3 /* Alexander.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alexander.framework.dSYM; sourceTree = "<group>"; };
+		3AA3089E1C62C25B004B06C3 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		3AA3089F1C62C25B004B06C3 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		3AA308A01C62C25B004B06C3 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		3AA308A11C62C25B004B06C3 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		3AA308A31C62C25B004B06C3 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		3AA308A41C62C25B004B06C3 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		3AA308A51C62C25B004B06C3 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		3AA308A61C62C25B004B06C3 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		3AA308A71C62C25B004B06C3 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		3AA308A81C62C25B004B06C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3AA308AA1C62C25B004B06C3 /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
+		3AA308AB1C62C25B004B06C3 /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
+		3AA308AC1C62C25B004B06C3 /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		3AA308AD1C62C25B004B06C3 /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		3AA308AF1C62C25B004B06C3 /* watchOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Application.xcconfig"; sourceTree = "<group>"; };
+		3AA308B01C62C25B004B06C3 /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
+		3AA308B11C62C25B004B06C3 /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		3AA308B21C62C25B004B06C3 /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexanderTests.swift; sourceTree = "<group>"; };
 		3AE5C39B1BFD522300F1080F /* DecoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoderType.swift; sourceTree = "<group>"; };
 		3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDecoderTests.swift; sourceTree = "<group>"; };
@@ -241,11 +280,163 @@
 			path = tvOS;
 			sourceTree = "<group>";
 		};
+		3AA3087E1C62C25B004B06C3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3087F1C62C25B004B06C3 /* .gitignore */,
+				3AA308801C62C25B004B06C3 /* Base */,
+				3AA3088B1C62C25B004B06C3 /* Carthage */,
+				3AA3089D1C62C25B004B06C3 /* iOS */,
+				3AA308A21C62C25B004B06C3 /* Mac OS X */,
+				3AA308A81C62C25B004B06C3 /* README.md */,
+				3AA308A91C62C25B004B06C3 /* tvOS */,
+				3AA308AE1C62C25B004B06C3 /* watchOS */,
+			);
+			name = Configuration;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		3AA308801C62C25B004B06C3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308811C62C25B004B06C3 /* Common.xcconfig */,
+				3AA308821C62C25B004B06C3 /* Configurations */,
+				3AA308871C62C25B004B06C3 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3AA308821C62C25B004B06C3 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308831C62C25B004B06C3 /* Debug.xcconfig */,
+				3AA308841C62C25B004B06C3 /* Profile.xcconfig */,
+				3AA308851C62C25B004B06C3 /* Release.xcconfig */,
+				3AA308861C62C25B004B06C3 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		3AA308871C62C25B004B06C3 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308881C62C25B004B06C3 /* Application.xcconfig */,
+				3AA308891C62C25B004B06C3 /* Framework.xcconfig */,
+				3AA3088A1C62C25B004B06C3 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		3AA3088B1C62C25B004B06C3 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3088C1C62C25B004B06C3 /* Build */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		3AA3088C1C62C25B004B06C3 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3088D1C62C25B004B06C3 /* iOS */,
+				3AA308921C62C25B004B06C3 /* Mac */,
+				3AA308951C62C25B004B06C3 /* tvOS */,
+				3AA308991C62C25B004B06C3 /* watchOS */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		3AA3088D1C62C25B004B06C3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3088E1C62C25B004B06C3 /* 786365BD-ECBF-3DA8-9CA5-03AA56FAFA10.bcsymbolmap */,
+				3AA3088F1C62C25B004B06C3 /* Alexander.framework */,
+				3AA308901C62C25B004B06C3 /* Alexander.framework.dSYM */,
+				3AA308911C62C25B004B06C3 /* ECC6CF6C-679E-32E0-808A-5E6802848E60.bcsymbolmap */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3AA308921C62C25B004B06C3 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308931C62C25B004B06C3 /* Alexander.framework */,
+				3AA308941C62C25B004B06C3 /* Alexander.framework.dSYM */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		3AA308951C62C25B004B06C3 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308961C62C25B004B06C3 /* Alexander.framework */,
+				3AA308971C62C25B004B06C3 /* Alexander.framework.dSYM */,
+				3AA308981C62C25B004B06C3 /* B72DDD5F-0D98-396D-8F44-D558DBCC71A8.bcsymbolmap */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		3AA308991C62C25B004B06C3 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3089A1C62C25B004B06C3 /* 9B950C85-EC6C-31E7-BCF2-8EACC835369E.bcsymbolmap */,
+				3AA3089B1C62C25B004B06C3 /* Alexander.framework */,
+				3AA3089C1C62C25B004B06C3 /* Alexander.framework.dSYM */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		3AA3089D1C62C25B004B06C3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3089E1C62C25B004B06C3 /* iOS-Application.xcconfig */,
+				3AA3089F1C62C25B004B06C3 /* iOS-Base.xcconfig */,
+				3AA308A01C62C25B004B06C3 /* iOS-Framework.xcconfig */,
+				3AA308A11C62C25B004B06C3 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3AA308A21C62C25B004B06C3 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308A31C62C25B004B06C3 /* Mac-Application.xcconfig */,
+				3AA308A41C62C25B004B06C3 /* Mac-Base.xcconfig */,
+				3AA308A51C62C25B004B06C3 /* Mac-DynamicLibrary.xcconfig */,
+				3AA308A61C62C25B004B06C3 /* Mac-Framework.xcconfig */,
+				3AA308A71C62C25B004B06C3 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		3AA308A91C62C25B004B06C3 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308AA1C62C25B004B06C3 /* tvOS-Application.xcconfig */,
+				3AA308AB1C62C25B004B06C3 /* tvOS-Base.xcconfig */,
+				3AA308AC1C62C25B004B06C3 /* tvOS-Framework.xcconfig */,
+				3AA308AD1C62C25B004B06C3 /* tvOS-StaticLibrary.xcconfig */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		3AA308AE1C62C25B004B06C3 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AA308AF1C62C25B004B06C3 /* watchOS-Application.xcconfig */,
+				3AA308B01C62C25B004B06C3 /* watchOS-Base.xcconfig */,
+				3AA308B11C62C25B004B06C3 /* watchOS-Framework.xcconfig */,
+				3AA308B21C62C25B004B06C3 /* watchOS-StaticLibrary.xcconfig */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
 		3BEDAE151B5DC30500AD52FE = {
 			isa = PBXGroup;
 			children = (
 				3BEDAE5B1B5DC4B200AD52FE /* Alexander */,
 				3A512F0A1BE16BB60091A124 /* Tests */,
+				3AA3087E1C62C25B004B06C3 /* Configuration */,
 				3BEDAE201B5DC30500AD52FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -648,145 +839,76 @@
 /* Begin XCBuildConfiguration section */
 		3A512EEB1BE169920091A124 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308AC1C62C25B004B06C3 /* tvOS-Framework.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 8;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Alexander/Configuration/tvOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
 		};
 		3A512EEC1BE169920091A124 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308AC1C62C25B004B06C3 /* tvOS-Framework.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 8;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Alexander/Configuration/tvOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
 		3A512EEE1BE169920091A124 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308AA1C62C25B004B06C3 /* tvOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Configuration/tvOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
 			};
 			name = Debug;
 		};
 		3A512EEF1BE169920091A124 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308AA1C62C25B004B06C3 /* tvOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Configuration/tvOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
 			};
 			name = Release;
 		};
 		3A512EFB1BE169A00091A124 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308B11C62C25B004B06C3 /* watchOS-Framework.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 8;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Alexander/Configuration/watchOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
 		3A512EFC1BE169A00091A124 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308B11C62C25B004B06C3 /* watchOS-Framework.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 8;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Alexander/Configuration/watchOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
 		};
 		3BEDAE331B5DC30500AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308831C62C25B004B06C3 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 8;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -796,39 +918,12 @@
 		};
 		3BEDAE341B5DC30500AD52FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308851C62C25B004B06C3 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 8;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -837,145 +932,95 @@
 		};
 		3BEDAE361B5DC30500AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308A01C62C25B004B06C3 /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEFINES_MODULE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Alexander/Configuration/iOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		3BEDAE371B5DC30500AD52FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308A01C62C25B004B06C3 /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEFINES_MODULE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Alexander/Configuration/iOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		3BEDAE391B5DC30500AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA3089E1C62C25B004B06C3 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = Tests/Configuration/iOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		3BEDAE3A1B5DC30500AD52FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA3089E1C62C25B004B06C3 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = Tests/Configuration/iOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
 		3BEDAE781B5DC4EC00AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308A61C62C25B004B06C3 /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Alexander/Configuration/macOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		3BEDAE791B5DC4EC00AD52FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308A61C62C25B004B06C3 /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 8;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Alexander/Configuration/macOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Alexander;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		3BEDAE7B1B5DC4EC00AD52FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308A31C62C25B004B06C3 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Configuration/macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		3BEDAE7C1B5DC4EC00AD52FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA308A31C62C25B004B06C3 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Configuration/macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
