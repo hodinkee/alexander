@@ -8,12 +8,12 @@
 
 public protocol EncoderType {
     typealias Value
-    static func encode(value: Value) -> JSON
+    static func encode(value: Value) -> AnyObject
 }
 
 extension EncoderType {
-    public static func encode<S: SequenceType where S.Generator.Element == Value>(sequence: S) -> JSON {
-        return JSON(object: sequence.map({ encode($0).object }))
+    public static func encode<S: SequenceType where S.Generator.Element == Value>(sequence: S) -> AnyObject {
+        return sequence.map(encode)
     }
 }
 
@@ -21,8 +21,8 @@ extension EncoderType {
 ///
 /// - SeeAlso: `NSDate.timeIntervalSince1970`
 public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
-    public static func encode(value: NSDate) -> JSON {
-        return JSON(object: value.timeIntervalSince1970)
+    public static func encode(value: NSDate) -> AnyObject {
+        return value.timeIntervalSince1970
     }
 }
 
@@ -30,8 +30,8 @@ public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
 ///
 /// - SeeAlso: `NSDate.timeIntervalSinceReferenceDate`
 public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
-    public static func encode(value: NSDate) -> JSON {
-        return JSON(object: value.timeIntervalSinceReferenceDate)
+    public static func encode(value: NSDate) -> AnyObject {
+        return value.timeIntervalSinceReferenceDate
     }
 }
 
@@ -39,7 +39,7 @@ public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
 ///
 /// - SeeAlso: `NSURL.absoluteString`
 public struct NSURLEncoder: EncoderType {
-    public static func encode(value: NSURL) -> JSON {
-        return JSON(object: value.absoluteString)
+    public static func encode(value: NSURL) -> AnyObject {
+        return value.absoluteString
     }
 }
