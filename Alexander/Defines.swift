@@ -6,8 +6,6 @@
 //  Copyright © 2015 HODINKEE. All rights reserved.
 //
 
-import Foundation
-
 extension Dictionary {
     func mapValues<T>(transform: Value -> T) -> [Key: T] {
         var mutableDictionary = [Key: T]()

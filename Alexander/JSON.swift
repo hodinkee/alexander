@@ -6,9 +6,6 @@
 //  Copyright © 2015 HODINKEE. All rights reserved.
 //
 
-import Foundation
-import CoreGraphics
-
 public enum Error: ErrorType {
     case InvalidObject
 }
