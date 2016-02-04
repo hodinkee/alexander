@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Alexander.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3A512EE11BE169920091A124"
+               BuildableName = "Alexander tvOS Tests.xctest"
+               BlueprintName = "Alexander tvOS Tests"
+               ReferencedContainer = "container:Alexander.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
