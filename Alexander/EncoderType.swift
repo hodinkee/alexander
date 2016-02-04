@@ -12,8 +12,15 @@ public protocol EncoderType {
 }
 
 extension EncoderType {
-    public static func encode<S: SequenceType where S.Generator.Element == Value>(sequence: S) -> AnyObject {
+    /// Encode a sequence of values by calling `encode(_:)` with each `Value`
+    /// in `sequence`.
+    public static func encodeSequence<S: SequenceType where S.Generator.Element == Value>(sequence: S) -> AnyObject {
         return sequence.map(encode)
+    }
+
+    @available(*, deprecated, message = "Use encodeSequence(_:) instead.")
+    public static func encode<S: SequenceType where S.Generator.Element == Value>(sequence: S) -> AnyObject {
+        return encodeSequence(sequence)
     }
 }
 
