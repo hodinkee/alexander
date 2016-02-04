@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Alexander'
-  spec.version      = '3.0.0'
+  spec.version      = '3.0.1'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage     = 'https://github.com/hodinkee/alexander'
   spec.authors      = { 'Caleb Davenport' => 'caleb@calebd.me', 'Jonathan Baker' => 'jonathan@jonathanbaker.me' }
