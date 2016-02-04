@@ -3,10 +3,8 @@
 //  Alexander
 //
 //  Created by Caleb Davenport on 8/17/15.
-//  Copyright © 2015 HODINKEE. All rights reserved.
+//  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
-
-import Foundation
 
 extension Dictionary {
     func mapValues<T>(transform: Value -> T) -> [Key: T] {

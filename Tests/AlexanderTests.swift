@@ -3,7 +3,7 @@
 //  Alexander Tests
 //
 //  Created by Caleb Davenport on 11/18/15.
-//  Copyright © 2015 HODINKEE. All rights reserved.
+//  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
 
 import XCTest
@@ -95,7 +95,6 @@ final class AlexanderTests: XCTestCase {
 
     func testDateHelpers() {
         let JSON = Alexander.JSON(object: 978307200)
-        XCTAssertEqual(JSON.decode(NSTimeIntervalDecoder), NSDate(timeIntervalSinceReferenceDate: 0).timeIntervalSince1970)
         XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder), NSDate(timeIntervalSinceReferenceDate: 0))
     }
 }

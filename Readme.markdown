@@ -6,6 +6,12 @@
 
 Alexander is an extremely simple JSON helper written in Swift. It brings type safety and Foundation helpers to the cumbersome task of JSON unpacking.
 
+## Building
+
+```sh
+$ carthage bootstrap
+```
+
 ## Installation
 
 - [Carthage](https://github.com/carthage/carthage): `github "hodinkee/alexander"`
@@ -49,8 +55,8 @@ struct SizeDecoder {
     typealias Value = CGSize
     static func decode(JSON: Alexander.JSON) -> Value? {
         guard
-            let width = JSON["width"]?.CGFloatValue,
-            let height = JSON["height"]?.CGFloatValue
+            let width = JSON["width"]?.doubleValue,
+            let height = JSON["height"]?.doubleValue
         else {
             return nil
         }

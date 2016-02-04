@@ -3,7 +3,7 @@
 //  Alexander
 //
 //  Created by Caleb Davenport on 11/18/15.
-//  Copyright © 2015 HODINKEE. All rights reserved.
+//  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
 
 public protocol DecoderType {
@@ -12,20 +12,15 @@ public protocol DecoderType {
 }
 
 extension JSON {
+
+    /// Turn the receiver into a single `T.Value`.
     public func decode<T: DecoderType>(decoder: T.Type) -> T.Value? {
         return decode(T.decode)
     }
 
+    /// Turn the receiver into an array of `T.Value`
     public func decodeArray<T: DecoderType>(decoder: T.Type) -> [T.Value]? {
         return decodeArray(T.decode)
-    }
-}
-
-/// Decodes the given `JSON` as a `NSTimeInterval`.
-public struct NSTimeIntervalDecoder: DecoderType {
-    public typealias Value = NSTimeInterval
-    public static func decode(JSON: Alexander.JSON) -> Value? {
-        return JSON.object as? NSTimeInterval
     }
 }
 
@@ -33,9 +28,8 @@ public struct NSTimeIntervalDecoder: DecoderType {
 ///
 /// - SeeAlso: `NSDate(timeIntervalSince1970:)`
 public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
-    public typealias Value = NSDate
-    public static func decode(JSON: Alexander.JSON) -> Value? {
-        return JSON.decode(NSTimeIntervalDecoder).flatMap({ NSDate(timeIntervalSince1970: $0) })
+    public static func decode(JSON: Alexander.JSON) -> NSDate? {
+        return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSince1970: $0) })
     }
 }
 
@@ -43,9 +37,8 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
 ///
 /// - SeeAlso: `NSDate(timeIntervalSinceReferenceDate:)`
 public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
-    public typealias Value = NSDate
-    public static func decode(JSON: Alexander.JSON) -> Value? {
-        return JSON.decode(NSTimeIntervalDecoder).flatMap({ NSDate(timeIntervalSinceReferenceDate: $0) })
+    public static func decode(JSON: Alexander.JSON) -> NSDate? {
+        return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSinceReferenceDate: $0) })
     }
 }
 
@@ -53,8 +46,7 @@ public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
 ///
 /// - SeeAlso: `NSURL(string:)`
 public struct NSURLDecoder: DecoderType {
-    public typealias Value = NSURL
-    public static func decode(JSON: Alexander.JSON) -> Value? {
+    public static func decode(JSON: Alexander.JSON) -> NSURL? {
         return JSON.stringValue.flatMap({ NSURL(string: $0) })
     }
 }
@@ -65,8 +57,7 @@ public struct NSURLDecoder: DecoderType {
 ///
 /// - SeeAlso: `RawRepresentable(rawValue:)`
 public struct RawRepresentableDecoder<T: RawRepresentable>: DecoderType {
-    public typealias Value = T
-    public static func decode(JSON: Alexander.JSON) -> Value? {
-        return (JSON.object as? T.RawValue).flatMap(T.init)
+    public static func decode(JSON: Alexander.JSON) -> T? {
+        return (JSON.object as? T.RawValue).flatMap({ T(rawValue: $0) })
     }
 }

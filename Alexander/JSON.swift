@@ -3,11 +3,8 @@
 //  Alexander
 //
 //  Created by Caleb Davenport on 6/24/15.
-//  Copyright © 2015 HODINKEE. All rights reserved.
+//  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
-
-import Foundation
-import CoreGraphics
 
 public enum Error: ErrorType {
     case InvalidObject
@@ -82,10 +79,7 @@ public struct JSON {
     }
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        return (object as? [AnyObject])?.lazy
-            .map(JSON.init)
-            .map(transform)
-            .flatMap({ $0 })
+        return arrayValue?.lazy.map(JSON.init).map(transform).flatMap({ $0 })
     }
 }
 
@@ -110,15 +104,5 @@ extension JSON: CustomDebugStringConvertible {
                 return String(string)
         }
         return "Invalid JSON."
-    }
-}
-
-extension JSON {
-    public var CGFloatValue: CGFloat? {
-        return object as? CGFloat
-    }
-
-    public var numberValue: NSNumber? {
-        return object as? NSNumber
     }
 }
