@@ -1,5 +1,9 @@
 language: objective-c
-osx_image: xcode7.1
-xcode_sdk: iphonesimulator9.1
+osx_image: xcode7.2
 xcode_project: Alexander.xcodeproj
-xcode_scheme: "Alexander iOS"
+install:
+  - carthage bootstrap
+script:
+  - xctool -project "Alexander.xcodeproj" -scheme "Alexander iOS" -sdk "iphonesimulator" build test
+  - xctool -project "Alexander.xcodeproj" -scheme "Alexander macOS" -sdk "macosx" build test
+  - pod lib lint
