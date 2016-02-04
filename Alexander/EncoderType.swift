@@ -3,7 +3,7 @@
 //  Alexander
 //
 //  Created by Caleb Davenport on 11/19/15.
-//  Copyright © 2015 HODINKEE. All rights reserved.
+//  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
 
 public protocol EncoderType {
