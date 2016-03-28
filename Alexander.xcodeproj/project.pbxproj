@@ -184,7 +184,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A512EC91BE168C30091A124 /* Configuration */ = {
+		3A512EC91BE168C30091A124 /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
 				3A512ECA1BE168C30091A124 /* iOS */,
@@ -192,7 +192,7 @@
 				3A512ED01BE168C30091A124 /* tvOS */,
 				3A512ED11BE168C30091A124 /* watchOS */,
 			);
-			path = Configuration;
+			path = Platforms;
 			sourceTree = "<group>";
 		};
 		3A512ECA1BE168C30091A124 /* iOS */ = {
@@ -236,19 +236,19 @@
 			children = (
 				3AE5C3931BFD3EBC00F1080F /* AlexanderTests.swift */,
 				3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */,
-				3A512F0C1BE16BB60091A124 /* Configuration */,
+				3A512F0C1BE16BB60091A124 /* Platforms */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		3A512F0C1BE16BB60091A124 /* Configuration */ = {
+		3A512F0C1BE16BB60091A124 /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
 				3A512F0D1BE16BB60091A124 /* iOS */,
 				3A512F0F1BE16BB60091A124 /* macOS */,
 				3A512F111BE16BB60091A124 /* tvOS */,
 			);
-			path = Configuration;
+			path = Platforms;
 			sourceTree = "<group>";
 		};
 		3A512F0D1BE16BB60091A124 /* iOS */ = {
@@ -457,7 +457,7 @@
 				3AE5C39B1BFD522300F1080F /* DecoderType.swift */,
 				3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */,
 				3B62AAD81B82452800491A67 /* Defines.swift */,
-				3A512EC91BE168C30091A124 /* Configuration */,
+				3A512EC91BE168C30091A124 /* Platforms */,
 			);
 			path = Alexander;
 			sourceTree = "<group>";
@@ -833,7 +833,7 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
-				INFOPLIST_FILE = Alexander/Configuration/tvOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
@@ -844,7 +844,7 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
-				INFOPLIST_FILE = Alexander/Configuration/tvOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
@@ -853,7 +853,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA308AA1C62C25B004B06C3 /* tvOS-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Configuration/tvOS/Info.plist;
+				INFOPLIST_FILE = Tests/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -863,7 +863,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA308AA1C62C25B004B06C3 /* tvOS-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Configuration/tvOS/Info.plist;
+				INFOPLIST_FILE = Tests/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -875,7 +875,7 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
-				INFOPLIST_FILE = Alexander/Configuration/watchOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/watchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
@@ -886,7 +886,7 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
-				INFOPLIST_FILE = Alexander/Configuration/watchOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/watchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
@@ -928,7 +928,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
-				INFOPLIST_FILE = Alexander/Configuration/iOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
@@ -941,7 +941,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
-				INFOPLIST_FILE = Alexander/Configuration/iOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
@@ -952,7 +952,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
-				INFOPLIST_FILE = Tests/Configuration/iOS/Info.plist;
+				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -964,7 +964,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
-				INFOPLIST_FILE = Tests/Configuration/iOS/Info.plist;
+				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -977,7 +977,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Alexander/Configuration/macOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
@@ -989,7 +989,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 11;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Alexander/Configuration/macOS/Info.plist;
+				INFOPLIST_FILE = Alexander/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
@@ -998,7 +998,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA308A31C62C25B004B06C3 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Configuration/macOS/Info.plist;
+				INFOPLIST_FILE = Tests/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1008,7 +1008,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA308A31C62C25B004B06C3 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Configuration/macOS/Info.plist;
+				INFOPLIST_FILE = Tests/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
