@@ -7,7 +7,7 @@
 //
 
 public protocol EncoderType {
-    typealias Value
+    associatedtype Value
     static func encode(value: Value) -> AnyObject
 }
 
