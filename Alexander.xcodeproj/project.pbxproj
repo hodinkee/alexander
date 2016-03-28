@@ -68,7 +68,7 @@
 		3A512ECE1BE168C30091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
 		3A512ECF1BE168C30091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A512ED91BE169910091A124 /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A512EE21BE169920091A124 /* Alexander-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A512EF51BE169A00091A124 /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A512EFD1BE16AC00091A124 /* Alexander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alexander.h; sourceTree = "<group>"; };
 		3A512EFE1BE16AC00091A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,10 +122,10 @@
 		3AE5C3A01BFD551800F1080F /* UserDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDecoderTests.swift; sourceTree = "<group>"; };
 		3B62AAD81B82452800491A67 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BEDAE2A1B5DC30500AD52FE /* Alexander iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEDAE2A1B5DC30500AD52FE /* Alexander-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEDAE6E1B5DC4EC00AD52FE /* Alexander-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,11 +440,11 @@
 			isa = PBXGroup;
 			children = (
 				3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */,
-				3BEDAE2A1B5DC30500AD52FE /* Alexander iOS Tests.xctest */,
+				3BEDAE2A1B5DC30500AD52FE /* Alexander-iOS-Tests.xctest */,
 				3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */,
-				3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */,
+				3BEDAE6E1B5DC4EC00AD52FE /* Alexander-macOS-Tests.xctest */,
 				3A512ED91BE169910091A124 /* Alexander.framework */,
-				3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */,
+				3A512EE21BE169920091A124 /* Alexander-tvOS-Tests.xctest */,
 				3A512EF51BE169A00091A124 /* Alexander.framework */,
 			);
 			name = Products;
@@ -500,9 +500,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A512ED81BE169910091A124 /* Alexander tvOS */ = {
+		3A512ED81BE169910091A124 /* Alexander-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A512EEA1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS" */;
+			buildConfigurationList = 3A512EEA1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander-tvOS" */;
 			buildPhases = (
 				3A512ED41BE169910091A124 /* Sources */,
 				3A512ED51BE169910091A124 /* Frameworks */,
@@ -513,14 +513,14 @@
 			);
 			dependencies = (
 			);
-			name = "Alexander tvOS";
+			name = "Alexander-tvOS";
 			productName = "Alexander tvOS";
 			productReference = 3A512ED91BE169910091A124 /* Alexander.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3A512EE11BE169920091A124 /* Alexander tvOS Tests */ = {
+		3A512EE11BE169920091A124 /* Alexander-tvOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A512EED1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS Tests" */;
+			buildConfigurationList = 3A512EED1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander-tvOS-Tests" */;
 			buildPhases = (
 				3A512EDE1BE169920091A124 /* Sources */,
 				3A512EDF1BE169920091A124 /* Frameworks */,
@@ -531,14 +531,14 @@
 			dependencies = (
 				3A512EE51BE169920091A124 /* PBXTargetDependency */,
 			);
-			name = "Alexander tvOS Tests";
+			name = "Alexander-tvOS-Tests";
 			productName = "Alexander tvOSTests";
-			productReference = 3A512EE21BE169920091A124 /* Alexander tvOS Tests.xctest */;
+			productReference = 3A512EE21BE169920091A124 /* Alexander-tvOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3A512EF41BE169A00091A124 /* Alexander watchOS */ = {
+		3A512EF41BE169A00091A124 /* Alexander-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A512EFA1BE169A00091A124 /* Build configuration list for PBXNativeTarget "Alexander watchOS" */;
+			buildConfigurationList = 3A512EFA1BE169A00091A124 /* Build configuration list for PBXNativeTarget "Alexander-watchOS" */;
 			buildPhases = (
 				3A512EF01BE169A00091A124 /* Sources */,
 				3A512EF11BE169A00091A124 /* Frameworks */,
@@ -549,14 +549,14 @@
 			);
 			dependencies = (
 			);
-			name = "Alexander watchOS";
+			name = "Alexander-watchOS";
 			productName = "Alexander watchOS";
 			productReference = 3A512EF51BE169A00091A124 /* Alexander.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BEDAE1E1B5DC30500AD52FE /* Alexander iOS */ = {
+		3BEDAE1E1B5DC30500AD52FE /* Alexander-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEDAE351B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander iOS" */;
+			buildConfigurationList = 3BEDAE351B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander-iOS" */;
 			buildPhases = (
 				3BEDAE1A1B5DC30500AD52FE /* Sources */,
 				3BEDAE1B1B5DC30500AD52FE /* Frameworks */,
@@ -567,14 +567,14 @@
 			);
 			dependencies = (
 			);
-			name = "Alexander iOS";
+			name = "Alexander-iOS";
 			productName = Alexander;
 			productReference = 3BEDAE1F1B5DC30500AD52FE /* Alexander.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BEDAE291B5DC30500AD52FE /* Alexander iOS Tests */ = {
+		3BEDAE291B5DC30500AD52FE /* Alexander-iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEDAE381B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander iOS Tests" */;
+			buildConfigurationList = 3BEDAE381B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander-iOS-Tests" */;
 			buildPhases = (
 				3BEDAE261B5DC30500AD52FE /* Sources */,
 				3BEDAE271B5DC30500AD52FE /* Frameworks */,
@@ -585,14 +585,14 @@
 			dependencies = (
 				3BEDAE2D1B5DC30500AD52FE /* PBXTargetDependency */,
 			);
-			name = "Alexander iOS Tests";
+			name = "Alexander-iOS-Tests";
 			productName = AlexanderTests;
-			productReference = 3BEDAE2A1B5DC30500AD52FE /* Alexander iOS Tests.xctest */;
+			productReference = 3BEDAE2A1B5DC30500AD52FE /* Alexander-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3BEDAE631B5DC4EC00AD52FE /* Alexander macOS */ = {
+		3BEDAE631B5DC4EC00AD52FE /* Alexander-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS" */;
+			buildConfigurationList = 3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander-macOS" */;
 			buildPhases = (
 				3BEDAE5F1B5DC4EC00AD52FE /* Sources */,
 				3BEDAE601B5DC4EC00AD52FE /* Frameworks */,
@@ -603,14 +603,14 @@
 			);
 			dependencies = (
 			);
-			name = "Alexander macOS";
+			name = "Alexander-macOS";
 			productName = "Alexander OS X";
 			productReference = 3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BEDAE6D1B5DC4EC00AD52FE /* Alexander macOS Tests */ = {
+		3BEDAE6D1B5DC4EC00AD52FE /* Alexander-macOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS Tests" */;
+			buildConfigurationList = 3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander-macOS-Tests" */;
 			buildPhases = (
 				3BEDAE6A1B5DC4EC00AD52FE /* Sources */,
 				3BEDAE6B1B5DC4EC00AD52FE /* Frameworks */,
@@ -621,9 +621,9 @@
 			dependencies = (
 				3BEDAE711B5DC4EC00AD52FE /* PBXTargetDependency */,
 			);
-			name = "Alexander macOS Tests";
+			name = "Alexander-macOS-Tests";
 			productName = "Alexander OS XTests";
-			productReference = 3BEDAE6E1B5DC4EC00AD52FE /* Alexander macOS Tests.xctest */;
+			productReference = 3BEDAE6E1B5DC4EC00AD52FE /* Alexander-macOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -671,13 +671,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3BEDAE1E1B5DC30500AD52FE /* Alexander iOS */,
-				3BEDAE291B5DC30500AD52FE /* Alexander iOS Tests */,
-				3BEDAE631B5DC4EC00AD52FE /* Alexander macOS */,
-				3BEDAE6D1B5DC4EC00AD52FE /* Alexander macOS Tests */,
-				3A512ED81BE169910091A124 /* Alexander tvOS */,
-				3A512EE11BE169920091A124 /* Alexander tvOS Tests */,
-				3A512EF41BE169A00091A124 /* Alexander watchOS */,
+				3BEDAE1E1B5DC30500AD52FE /* Alexander-iOS */,
+				3BEDAE291B5DC30500AD52FE /* Alexander-iOS-Tests */,
+				3BEDAE631B5DC4EC00AD52FE /* Alexander-macOS */,
+				3BEDAE6D1B5DC4EC00AD52FE /* Alexander-macOS-Tests */,
+				3A512ED81BE169910091A124 /* Alexander-tvOS */,
+				3A512EE11BE169920091A124 /* Alexander-tvOS-Tests */,
+				3A512EF41BE169A00091A124 /* Alexander-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -811,17 +811,17 @@
 /* Begin PBXTargetDependency section */
 		3A512EE51BE169920091A124 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A512ED81BE169910091A124 /* Alexander tvOS */;
+			target = 3A512ED81BE169910091A124 /* Alexander-tvOS */;
 			targetProxy = 3A512EE41BE169920091A124 /* PBXContainerItemProxy */;
 		};
 		3BEDAE2D1B5DC30500AD52FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BEDAE1E1B5DC30500AD52FE /* Alexander iOS */;
+			target = 3BEDAE1E1B5DC30500AD52FE /* Alexander-iOS */;
 			targetProxy = 3BEDAE2C1B5DC30500AD52FE /* PBXContainerItemProxy */;
 		};
 		3BEDAE711B5DC4EC00AD52FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BEDAE631B5DC4EC00AD52FE /* Alexander macOS */;
+			target = 3BEDAE631B5DC4EC00AD52FE /* Alexander-macOS */;
 			targetProxy = 3BEDAE701B5DC4EC00AD52FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1017,7 +1017,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A512EEA1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS" */ = {
+		3A512EEA1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A512EEB1BE169920091A124 /* Debug */,
@@ -1026,7 +1026,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A512EED1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander tvOS Tests" */ = {
+		3A512EED1BE169920091A124 /* Build configuration list for PBXNativeTarget "Alexander-tvOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A512EEE1BE169920091A124 /* Debug */,
@@ -1035,7 +1035,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A512EFA1BE169A00091A124 /* Build configuration list for PBXNativeTarget "Alexander watchOS" */ = {
+		3A512EFA1BE169A00091A124 /* Build configuration list for PBXNativeTarget "Alexander-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A512EFB1BE169A00091A124 /* Debug */,
@@ -1053,7 +1053,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEDAE351B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander iOS" */ = {
+		3BEDAE351B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEDAE361B5DC30500AD52FE /* Debug */,
@@ -1062,7 +1062,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEDAE381B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander iOS Tests" */ = {
+		3BEDAE381B5DC30500AD52FE /* Build configuration list for PBXNativeTarget "Alexander-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEDAE391B5DC30500AD52FE /* Debug */,
@@ -1071,7 +1071,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS" */ = {
+		3BEDAE771B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEDAE781B5DC4EC00AD52FE /* Debug */,
@@ -1080,7 +1080,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander macOS Tests" */ = {
+		3BEDAE7A1B5DC4EC00AD52FE /* Build configuration list for PBXNativeTarget "Alexander-macOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEDAE7B1B5DC4EC00AD52FE /* Debug */,

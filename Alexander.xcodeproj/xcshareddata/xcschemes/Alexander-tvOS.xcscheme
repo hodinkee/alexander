@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
+               BlueprintIdentifier = "3A512ED81BE169910091A124"
                BuildableName = "Alexander.framework"
-               BlueprintName = "Alexander macOS"
+               BlueprintName = "Alexander-tvOS"
                ReferencedContainer = "container:Alexander.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BEDAE6D1B5DC4EC00AD52FE"
-               BuildableName = "Alexander macOS Tests.xctest"
-               BlueprintName = "Alexander macOS Tests"
+               BlueprintIdentifier = "3A512EE11BE169920091A124"
+               BuildableName = "Alexander-tvOS-Tests.xctest"
+               BlueprintName = "Alexander-tvOS-Tests"
                ReferencedContainer = "container:Alexander.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BEDAE6D1B5DC4EC00AD52FE"
-               BuildableName = "Alexander macOS Tests.xctest"
-               BlueprintName = "Alexander macOS Tests"
+               BlueprintIdentifier = "3A512EE11BE169920091A124"
+               BuildableName = "Alexander-tvOS-Tests.xctest"
+               BlueprintName = "Alexander-tvOS-Tests"
                ReferencedContainer = "container:Alexander.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,9 +57,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
+            BlueprintIdentifier = "3A512ED81BE169910091A124"
             BuildableName = "Alexander.framework"
-            BlueprintName = "Alexander macOS"
+            BlueprintName = "Alexander-tvOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +79,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
+            BlueprintIdentifier = "3A512ED81BE169910091A124"
             BuildableName = "Alexander.framework"
-            BlueprintName = "Alexander macOS"
+            BlueprintName = "Alexander-tvOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -97,9 +97,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
+            BlueprintIdentifier = "3A512ED81BE169910091A124"
             BuildableName = "Alexander.framework"
-            BlueprintName = "Alexander macOS"
+            BlueprintName = "Alexander-tvOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
