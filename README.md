@@ -6,11 +6,10 @@
 
 Alexander is an extremely simple JSON helper written in Swift. It brings type safety and Foundation helpers to the cumbersome task of JSON unpacking.
 
-## Building
+## Requirements
 
-```sh
-$ carthage bootstrap
-```
+- Swift 2.2
+- iOS 8.0, tvOS 9.0, or OS X 10.9
 
 ## Installation
 
