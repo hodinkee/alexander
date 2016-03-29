@@ -6,4 +6,4 @@ install:
 script:
   - xctool/xctool.sh -project "Alexander.xcodeproj" -scheme "Alexander-iOS" -sdk "iphonesimulator" build test
   - xctool/xctool.sh -project "Alexander.xcodeproj" -scheme "Alexander-macOS" -sdk "macosx" build test
-  - pod spec lint
+  - pod lib lint
