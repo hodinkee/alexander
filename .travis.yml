@@ -1,9 +1,10 @@
 language: objective-c
-osx_image: xcode7.2
-xcode_project: Alexander.xcodeproj
+osx_image: xcode7.3
 install:
-  - carthage bootstrap
+  - carthage bootstrap --no-use-binaries
+  - git clone https://github.com/facebook/xctool.git
 script:
-  - xctool -project "Alexander.xcodeproj" -scheme "Alexander iOS" -sdk "iphonesimulator" build test
-  - xctool -project "Alexander.xcodeproj" -scheme "Alexander macOS" -sdk "macosx" build test
+  - xctool/xctool.sh -project "Alexander.xcodeproj" -scheme "Alexander-iOS" -sdk "iphonesimulator" build test
+  - xctool/xctool.sh -project "Alexander.xcodeproj" -scheme "Alexander-macOS" -sdk "macosx" build test
+  - xctool/xctool.sh -project "Alexander.xcodeproj" -scheme "Alexander-tvOS" -sdk "appletvsimulator" build test
   - pod lib lint

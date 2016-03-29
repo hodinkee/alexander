@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A512EF41BE169A00091A124"
+               BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
                BuildableName = "Alexander.framework"
-               BlueprintName = "Alexander watchOS"
+               BlueprintName = "Alexander-macOS"
+               ReferencedContainer = "container:Alexander.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BEDAE6D1B5DC4EC00AD52FE"
+               BuildableName = "Alexander-macOS-Tests.xctest"
+               BlueprintName = "Alexander-macOS-Tests"
                ReferencedContainer = "container:Alexander.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +43,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BEDAE6D1B5DC4EC00AD52FE"
+               BuildableName = "Alexander-macOS-Tests.xctest"
+               BlueprintName = "Alexander-macOS-Tests"
+               ReferencedContainer = "container:Alexander.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
+            BuildableName = "Alexander.framework"
+            BlueprintName = "Alexander-macOS"
+            ReferencedContainer = "container:Alexander.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,9 +79,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3A512EF41BE169A00091A124"
+            BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
             BuildableName = "Alexander.framework"
-            BlueprintName = "Alexander watchOS"
+            BlueprintName = "Alexander-macOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +97,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3A512EF41BE169A00091A124"
+            BlueprintIdentifier = "3BEDAE631B5DC4EC00AD52FE"
             BuildableName = "Alexander.framework"
-            BlueprintName = "Alexander watchOS"
+            BlueprintName = "Alexander-macOS"
             ReferencedContainer = "container:Alexander.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

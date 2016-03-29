@@ -7,7 +7,7 @@
 //
 
 public protocol DecoderType {
-    typealias Value
+    associatedtype Value
     static func decode(JSON: Alexander.JSON) -> Value?
 }
 
