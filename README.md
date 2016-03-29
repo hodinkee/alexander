@@ -8,8 +8,9 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 ## Requirements
 
-- Swift 2.2
-- iOS 8.0, tvOS 9.0, or OS X 10.9
+|  Xcode  |  Swift  |  iOS  |  tvOS  |  OS X  |
+| :-----: | :-----: | :---: | :----: | :----: |
+| 7.3     | 2.2     | 8.0   | 9.0    | 10.9   |
 
 ## Installation
 
