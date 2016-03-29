@@ -14,8 +14,11 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 ## Installation
 
-- [Carthage](https://github.com/carthage/carthage): `github "hodinkee/alexander"`
-- [CocoaPods](https://github.com/cocoapods/cocoapods): `pod "Alexander"`
+##### [Carthage](https://github.com/carthage/carthage)
+> `github "hodinkee/alexander"`
+
+#####[CocoaPods](https://github.com/cocoapods/cocoapods)
+> `pod 'Alexander'`
 
 ## Usage
 
