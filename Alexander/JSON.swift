@@ -24,11 +24,11 @@ public struct JSON {
     public var object: AnyObject
 
     public var array: [JSON]? {
-        return arrayValue?.map({ JSON(object: $0) })
+        return arrayValue?.map(JSON.init)
     }
 
     public var dictionary: [String: JSON]? {
-        return dictionaryValue?.mapValues({ JSON(object: $0) })
+        return dictionaryValue?.mapValues(JSON.init)
     }
 
     public var arrayValue: [AnyObject]? {
@@ -40,11 +40,11 @@ public struct JSON {
     }
 
     public subscript(index: Int) -> JSON? {
-        return (arrayValue?[index]).map({ JSON(object: $0) })
+        return (arrayValue?[index]).map(JSON.init)
     }
 
     public subscript(key: String) -> JSON? {
-        return (dictionaryValue?[key]).map({ JSON(object: $0) })
+        return (dictionaryValue?[key]).map(JSON.init)
     }
 
     public var stringValue: String? {
