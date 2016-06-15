@@ -89,20 +89,21 @@ extension JSON {
     }
 
     public func data(options: NSJSONWritingOptions = []) throws -> NSData {
-        if NSJSONSerialization.isValidJSONObject(object) {
-            return try NSJSONSerialization.dataWithJSONObject(object, options: options)
+        guard NSJSONSerialization.isValidJSONObject(object) else {
+            throw Error.InvalidObject
         }
-        throw Error.InvalidObject
+        return try NSJSONSerialization.dataWithJSONObject(object, options: options)
     }
 }
 
 extension JSON: CustomDebugStringConvertible {
     public var debugDescription: String {
-        if
-            let data = try? self.data(.PrettyPrinted),
-            let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
-                return String(string)
+        guard let
+            data = try? self.data(.PrettyPrinted),
+            string = NSString(data: data, encoding: NSUTF8StringEncoding)
+        else {
+            return "Invalid JSON."
         }
-        return "Invalid JSON."
+        return String(string)
     }
 }
