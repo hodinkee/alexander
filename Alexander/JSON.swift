@@ -79,7 +79,7 @@ public struct JSON {
     }
     
     public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        return arrayValue?.lazy.map(JSON.init).map(transform).flatMap({ $0 })
+        return arrayValue?.lazy.map(JSON.init).flatMap(transform)
     }
 }
 
