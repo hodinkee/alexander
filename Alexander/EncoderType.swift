@@ -47,6 +47,10 @@ public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
 /// - SeeAlso: `NSURL.absoluteString`
 public struct NSURLEncoder: EncoderType {
     public static func encode(value: NSURL) -> AnyObject {
-        return value.absoluteString
+        #if swift(>=2.3)
+            return value.absoluteString ?? NSNull()
+        #else
+            return value.absoluteString
+        #endif
     }
 }
