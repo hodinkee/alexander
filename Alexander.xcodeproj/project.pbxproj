@@ -13,6 +13,8 @@
 		3A1F24511D1192850021EEBC /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F24501D1192850021EEBC /* Dictionary+MapValues.swift */; };
 		3A1F24521D1192850021EEBC /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F24501D1192850021EEBC /* Dictionary+MapValues.swift */; };
 		3A1F24531D1192850021EEBC /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F24501D1192850021EEBC /* Dictionary+MapValues.swift */; };
+		3A1F24541D1194440021EEBC /* AlexanderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F244C1D11925C0021EEBC /* AlexanderError.swift */; };
+		3A1F24551D1194470021EEBC /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F24501D1192850021EEBC /* Dictionary+MapValues.swift */; };
 		3A512ED21BE169390091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512ECB1BE168C30091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512ED31BE1693C0091A124 /* Alexander.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A512ECE1BE168C30091A124 /* Alexander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A512EE31BE169920091A124 /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A512ED91BE169910091A124 /* Alexander.framework */; };
@@ -765,6 +767,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE5C39F1BFD522300F1080F /* DecoderType.swift in Sources */,
+				3A1F24551D1194470021EEBC /* Dictionary+MapValues.swift in Sources */,
+				3A1F24541D1194440021EEBC /* AlexanderError.swift in Sources */,
 				3AA08DE21BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
 				3A512F071BE16B250091A124 /* JSON.swift in Sources */,
 			);
