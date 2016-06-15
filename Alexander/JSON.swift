@@ -6,10 +6,6 @@
 //  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
 
-public enum Error: ErrorType {
-    case InvalidObject
-}
-
 public struct JSON {
     
     // MARK: - Initializers
@@ -90,7 +86,7 @@ extension JSON {
 
     public func data(options: NSJSONWritingOptions = []) throws -> NSData {
         guard NSJSONSerialization.isValidJSONObject(object) else {
-            throw Error.InvalidObject
+            throw AlexanderError.InvalidObject
         }
         return try NSJSONSerialization.dataWithJSONObject(object, options: options)
     }

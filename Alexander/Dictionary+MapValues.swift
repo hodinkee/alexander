@@ -1,9 +1,9 @@
 //
-//  Defines.swift
+//  Dictionary+MapValues.swift
 //  Alexander
 //
-//  Created by Caleb Davenport on 8/17/15.
-//  Copyright © 2015-2016 HODINKEE. All rights reserved.
+//  Created by Caleb Davenport on 6/15/16.
+//  Copyright © 2016 HODINKEE. All rights reserved.
 //
 
 extension Dictionary {
