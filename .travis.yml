@@ -5,6 +5,13 @@ install:
 matrix:
   include:
     - script:
-      - xcodebuild build-for-testing test-without-building -project Alexander.xcodeproj -scheme Alexander-iOS -sdk iphonesimulator -configuration Release
+      - >-
+        xcodebuild
+        build-for-testing test-without-building
+        -project Alexander.xcodeproj
+        -scheme Alexander-iOS
+        -sdk iphonesimulator
+        -destination "platform=iOS Simulator,name=iPhone 6s"
+        -configuration Release
     - script:
       - pod lib lint
