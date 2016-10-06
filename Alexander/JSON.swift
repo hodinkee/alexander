@@ -7,88 +7,78 @@
 //
 
 public struct JSON {
-    
-    // MARK: - Initializers
-    
-    public init(object: AnyObject) {
-        self.object = object
-    }
 
-    
     // MARK: - Properties
     
-    public var object: AnyObject
+    let storage: AnyObject
 
-    public var array: [JSON]? {
-        return arrayValue?.map(JSON.init)
+
+    // MARK: - Initializers
+
+    public init(value: AnyObject) {
+        storage = value
     }
 
-    public var dictionary: [String: JSON]? {
-        return dictionaryValue?.mapValues(JSON.init)
+    public init(data: NSData, options: NSJSONReadingOptions = []) throws {
+        self.init(value: try NSJSONSerialization.JSONObjectWithData(data, options: options))
     }
 
-    public var arrayValue: [AnyObject]? {
-        return object as? [AnyObject]
+    public init(stream: NSInputStream, options: NSJSONReadingOptions = []) throws {
+        self.init(value: try NSJSONSerialization.JSONObjectWithStream(stream, options: options))
     }
 
-    public var dictionaryValue: [String: AnyObject]? {
-        return object as? [String: AnyObject]
-    }
-
-    public subscript(index: Int) -> JSON? {
-        return (arrayValue?[index]).map(JSON.init)
-    }
-
-    public subscript(key: String) -> JSON? {
-        return (dictionaryValue?[key]).map(JSON.init)
-    }
-
-    public var stringValue: String? {
-        return object as? String
-    }
-
-    public var integerValue: Int? {
-        return object as? Int
-    }
-
-    public var unsignedIntegerValue: UInt? {
-        return object as? UInt
-    }
-
-    public var doubleValue: Double? {
-        return object as? Double
-    }
-
-    public var floatValue: Float? {
-        return object as? Float
-    }
-
-    public var boolValue: Bool? {
-        return object as? Bool
-    }
-    
     
     // MARK: - Functions
 
-    public func decode<T>(transform: JSON -> T?) -> T? {
-        return transform(self)
+    public func value() -> Any {
+        return storage
     }
-    
-    public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
-        return arrayValue?.lazy.map(JSON.init).flatMap(transform)
-    }
-}
 
-extension JSON {
-    public init(data: NSData, options: NSJSONReadingOptions = []) throws {
-        self.object = try NSJSONSerialization.JSONObjectWithData(data, options: options)
+    public func value(atIndex index: Int) throws -> JSON {
+        let array: [AnyObject] = try value()
+        return JSON(value: array[index])
+    }
+
+    public func value(forKey key: String) throws -> JSON {
+        let dictionary: [String: AnyObject] = try value()
+        guard let value = dictionary[key] else {
+            throw AlexanderError.keyNotFound(key: key)
+        }
+        return JSON(value: value)
+    }
+
+    public func value<T>() throws -> T {
+        guard let value = storage as? T else {
+            throw AlexanderError.typeMismatch(expected: T.self, actual: storage)
+        }
+        return value
+    }
+
+    public func value<T>(atIndex index: Int) throws -> T {
+        return try value(atIndex: index).value()
+    }
+
+    public func value<T>(forKey key: String) throws -> T {
+        return try value(forKey: key).value()
+    }
+
+    public func value<T>(transform: (JSON) throws -> T) rethrows -> T {
+        return try transform(self)
+    }
+
+    public func value<T>(atIndex index: Int, transform: (JSON) throws -> T) throws -> T {
+        return try transform(try value(atIndex: index))
+    }
+
+    public func value<T>(forKey key: String, transform: (JSON) throws -> T) throws -> T {
+        return try transform(try value(forKey: key))
     }
 
     public func data(options: NSJSONWritingOptions = []) throws -> NSData {
-        guard NSJSONSerialization.isValidJSONObject(object) else {
-            throw AlexanderError.InvalidObject
+        guard NSJSONSerialization.isValidJSONObject(storage) else {
+            throw AlexanderError.invalidObject
         }
-        return try NSJSONSerialization.dataWithJSONObject(object, options: options)
+        return try NSJSONSerialization.dataWithJSONObject(storage, options: options)
     }
 }
 
