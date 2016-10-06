@@ -7,5 +7,5 @@
 //
 
 public enum AlexanderError: ErrorType {
-    case InvalidObject
+    case invalidObject
 }

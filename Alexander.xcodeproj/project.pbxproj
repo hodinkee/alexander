@@ -40,6 +40,10 @@
 		3BEDAE5D1B5DC4B200AD52FE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
 		3BEDAE6F1B5DC4EC00AD52FE /* Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */; };
 		3BEDAE7D1B5DC58800AD52FE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */; };
+		4E577C901DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
+		4E577C911DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
+		4E577C921DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
+		4E577C931DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +135,7 @@
 		3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE6E1B5DC4EC00AD52FE /* Alexander-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E577C8F1DA6D8E80024A79A /* Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +468,7 @@
 				3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */,
 				3A1F244C1D11925C0021EEBC /* AlexanderError.swift */,
 				3A1F24501D1192850021EEBC /* Dictionary+MapValues.swift */,
+				4E577C8F1DA6D8E80024A79A /* Deprecated.swift */,
 				3A512EC91BE168C30091A124 /* Platforms */,
 			);
 			path = Alexander;
@@ -753,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E577C921DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3A1F24531D1192850021EEBC /* Dictionary+MapValues.swift in Sources */,
 				3AE5C39E1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DE11BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
@@ -774,6 +781,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E577C931DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3AE5C39F1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3A1F24551D1194470021EEBC /* Dictionary+MapValues.swift in Sources */,
 				3A1F24541D1194440021EEBC /* AlexanderError.swift in Sources */,
@@ -786,6 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E577C901DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3A1F24511D1192850021EEBC /* Dictionary+MapValues.swift in Sources */,
 				3AE5C39C1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DDF1BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
@@ -807,6 +816,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E577C911DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3A1F24521D1192850021EEBC /* Dictionary+MapValues.swift in Sources */,
 				3AE5C39D1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DE01BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
