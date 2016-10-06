@@ -10,6 +10,32 @@ import XCTest
 @testable import Alexander
 
 final class JSONTests: XCTestCase {
+    func testTypeInference() {
+        let json = JSON(value: [
+            "string": "hello",
+            "integer": 1234,
+            "boolean": true,
+            "string-array": [
+                "one", "two", "three"
+            ]
+        ])
+
+        do {
+            let aString: String = try json.value(forKey: "string")
+            let anInteger: Int = try json.value(forKey: "integer")
+            let aBoolean: Bool = try json.value(forKey: "boolean")
+            let anArray: [String] = try json.value(forKey: "string-array")
+
+            XCTAssertEqual(aString, "hello")
+            XCTAssertEqual(anInteger, 1234)
+            XCTAssertEqual(aBoolean, true)
+            XCTAssertEqual(anArray, ["one", "two", "three"])
+        }
+        catch {
+            XCTFail("\(error)")
+        }
+    }
+
     func testKeyNotFoundError() {
         let json = JSON(value: ["hello": "world"])
 
