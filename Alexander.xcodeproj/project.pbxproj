@@ -44,6 +44,10 @@
 		4E577C911DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
 		4E577C921DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
 		4E577C931DA6D8E80024A79A /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C8F1DA6D8E80024A79A /* Deprecated.swift */; };
+		4E577C951DA6DEEC0024A79A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C941DA6DEEC0024A79A /* JSONDecodable.swift */; };
+		4E577C961DA6DEEC0024A79A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C941DA6DEEC0024A79A /* JSONDecodable.swift */; };
+		4E577C971DA6DEEC0024A79A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C941DA6DEEC0024A79A /* JSONDecodable.swift */; };
+		4E577C981DA6DEEC0024A79A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E577C941DA6DEEC0024A79A /* JSONDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,7 @@
 		3BEDAE641B5DC4EC00AD52FE /* Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEDAE6E1B5DC4EC00AD52FE /* Alexander-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E577C8F1DA6D8E80024A79A /* Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		4E577C941DA6DEEC0024A79A /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEDAE5C1B5DC4B200AD52FE /* JSON.swift */,
+				4E577C941DA6DEEC0024A79A /* JSONDecodable.swift */,
 				3AE5C39B1BFD522300F1080F /* DecoderType.swift */,
 				3AA08DDE1BFE4FCD001BCA4D /* EncoderType.swift */,
 				3A1F244C1D11925C0021EEBC /* AlexanderError.swift */,
@@ -761,6 +767,7 @@
 			files = (
 				4E577C921DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3A1F24531D1192850021EEBC /* Dictionary+MapValues.swift in Sources */,
+				4E577C971DA6DEEC0024A79A /* JSONDecodable.swift in Sources */,
 				3AE5C39E1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DE11BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
 				3A512F041BE16B250091A124 /* JSON.swift in Sources */,
@@ -783,6 +790,7 @@
 			files = (
 				4E577C931DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3AE5C39F1BFD522300F1080F /* DecoderType.swift in Sources */,
+				4E577C981DA6DEEC0024A79A /* JSONDecodable.swift in Sources */,
 				3A1F24551D1194470021EEBC /* Dictionary+MapValues.swift in Sources */,
 				3A1F24541D1194440021EEBC /* AlexanderError.swift in Sources */,
 				3AA08DE21BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
@@ -796,6 +804,7 @@
 			files = (
 				4E577C901DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3A1F24511D1192850021EEBC /* Dictionary+MapValues.swift in Sources */,
+				4E577C951DA6DEEC0024A79A /* JSONDecodable.swift in Sources */,
 				3AE5C39C1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DDF1BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
 				3A1F244D1D11925C0021EEBC /* AlexanderError.swift in Sources */,
@@ -818,6 +827,7 @@
 			files = (
 				4E577C911DA6D8E80024A79A /* Deprecated.swift in Sources */,
 				3A1F24521D1192850021EEBC /* Dictionary+MapValues.swift in Sources */,
+				4E577C961DA6DEEC0024A79A /* JSONDecodable.swift in Sources */,
 				3AE5C39D1BFD522300F1080F /* DecoderType.swift in Sources */,
 				3AA08DE01BFE4FCD001BCA4D /* EncoderType.swift in Sources */,
 				3A1F244E1D11925C0021EEBC /* AlexanderError.swift in Sources */,
