@@ -30,7 +30,7 @@ public struct JSON {
     
     // MARK: - Functions
 
-    public func value() -> Any {
+    public func value() -> AnyObject {
         return storage
     }
 
