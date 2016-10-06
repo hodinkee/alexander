@@ -31,6 +31,3 @@ matrix:
       -sdk macosx
       -destination "arch=x86_64"
       -configuration Release | xcpretty
-    # Podspec
-    - script:
-      - pod lib lint
