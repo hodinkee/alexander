@@ -644,24 +644,32 @@
 				TargetAttributes = {
 					3A512ED81BE169910091A124 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 					};
 					3A512EE11BE169920091A124 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					3A512EF41BE169A00091A124 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 					3BEDAE1E1B5DC30500AD52FE = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					3BEDAE291B5DC30500AD52FE = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					3BEDAE631B5DC4EC00AD52FE = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					3BEDAE6D1B5DC4EC00AD52FE = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -845,6 +853,7 @@
 				DYLIB_CURRENT_VERSION = 13;
 				INFOPLIST_FILE = Alexander/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -856,6 +865,7 @@
 				DYLIB_CURRENT_VERSION = 13;
 				INFOPLIST_FILE = Alexander/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -866,6 +876,7 @@
 				INFOPLIST_FILE = Tests/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -876,6 +887,7 @@
 				INFOPLIST_FILE = Tests/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -906,7 +918,6 @@
 			baseConfigurationReference = 3AA308831C62C25B004B06C3 /* Debug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 13;
-				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -934,12 +945,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA308A01C62C25B004B06C3 /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 13;
 				INFOPLIST_FILE = Alexander/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -947,12 +957,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA308A01C62C25B004B06C3 /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 13;
 				INFOPLIST_FILE = Alexander/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -965,6 +974,7 @@
 				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -977,6 +987,7 @@
 				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -989,6 +1000,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Alexander/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -1001,6 +1013,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Alexander/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -1011,6 +1024,7 @@
 				INFOPLIST_FILE = Tests/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -1021,6 +1035,7 @@
 				INFOPLIST_FILE = Tests/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
