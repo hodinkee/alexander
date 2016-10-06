@@ -649,6 +649,7 @@
 					3A512EE11BE169920091A124 = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					3A512EF41BE169A00091A124 = {
 						CreatedOnToolsVersion = 7.1;
@@ -660,6 +661,7 @@
 					3BEDAE291B5DC30500AD52FE = {
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					3BEDAE631B5DC4EC00AD52FE = {
 						CreatedOnToolsVersion = 6.4;
