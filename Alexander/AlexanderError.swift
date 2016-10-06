@@ -16,7 +16,7 @@ extension AlexanderError: CustomStringConvertible {
     public var description: String {
         switch self {
         case .invalidObject:
-            return "AlexanderError.invalidObject"
+            return "AlexanderError.invalidObject: The value is not convertable to JSON."
         case .keyNotFound(let key):
             return "AlexanderError.keyNotFound: The value for key \"\(key)\" could not be found."
         case .typeMismatch(let expected, let actual):
