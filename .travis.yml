@@ -4,14 +4,33 @@ install:
   - carthage bootstrap --no-use-binaries
 matrix:
   include:
-    - script:
-      - >-
-        xcodebuild
-        build-for-testing test-without-building
-        -project Alexander.xcodeproj
-        -scheme Alexander-iOS
-        -sdk iphonesimulator
-        -destination "platform=iOS Simulator,name=iPhone 6s"
-        -configuration Release
+    # Alexander-iOS
+    - script: >-
+      xcodebuild
+      build-for-testing test-without-building
+      -project Alexander.xcodeproj
+      -scheme Alexander-iOS
+      -sdk iphonesimulator
+      -destination "platform=iOS Simulator,name=iPhone 6s"
+      -configuration Release | xcpretty
+    # Alexander-tvOS
+    - script: >-
+      xcodebuild
+      build-for-testing test-without-building
+      -project Alexander.xcodeproj
+      -scheme Alexander-tvOS
+      -sdk appletvsimulator
+      -destination "platform=tvOS Simulator,name=Apple TV 1080p"
+      -configuration Release | xcpretty
+    # Alexander-macOS
+    - script: >-
+      xcodebuild
+      build test
+      -project Alexander.xcodeproj
+      -scheme Alexander-macOS
+      -sdk macosx
+      -destination "arch=x86_64"
+      -configuration Release | xcpretty
+    # Podspec
     - script:
       - pod lib lint
