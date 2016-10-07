@@ -37,12 +37,12 @@ extension JSON {
 
     @available(*, deprecated, message="")
     public var arrayValue: [AnyObject]? {
-        return object as? [AnyObject]
+        return try? value()
     }
 
     @available(*, deprecated, message="")
     public var dictionaryValue: [String: AnyObject]? {
-        return object as? [String: AnyObject]
+        return try? value()
     }
 
     @available(*, deprecated, message="")
@@ -57,32 +57,32 @@ extension JSON {
 
     @available(*, deprecated, message="")
     public var stringValue: String? {
-        return object as? String
+        return try? value()
     }
 
     @available(*, deprecated, message="")
     public var integerValue: Int? {
-        return object as? Int
+        return try? value()
     }
 
     @available(*, deprecated, message="")
     public var unsignedIntegerValue: UInt? {
-        return object as? UInt
+        return try? value()
     }
 
     @available(*, deprecated, message="")
     public var doubleValue: Double? {
-        return object as? Double
+        return try? value()
     }
 
     @available(*, deprecated, message="")
     public var floatValue: Float? {
-        return object as? Float
+        return try? value()
     }
 
     @available(*, deprecated, message="")
     public var boolValue: Bool? {
-        return object as? Bool
+        return try? value()
     }
 
 
