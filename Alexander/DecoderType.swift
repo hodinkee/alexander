@@ -28,6 +28,7 @@ extension JSON {
 /// Decodes the given `JSON` into a `NSDate`.
 ///
 /// - SeeAlso: `NSDate(timeIntervalSince1970:)`
+@available(*, deprecated, message="Use JSON.value(transform:) instead.")
 public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
     public static func decode(JSON: Alexander.JSON) -> NSDate? {
         return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSince1970: $0) })
@@ -37,6 +38,7 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
 /// Decodes the given `JSON` into a `NSDate`.
 ///
 /// - SeeAlso: `NSDate(timeIntervalSinceReferenceDate:)`
+@available(*, deprecated, message="Use JSON.value(transform:) instead.")
 public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     public static func decode(JSON: Alexander.JSON) -> NSDate? {
         return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSinceReferenceDate: $0) })
@@ -46,6 +48,7 @@ public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
 /// Decodes the given `JSON` into a `NSURL`.
 ///
 /// - SeeAlso: `NSURL(string:)`
+@available(*, deprecated, message="Use JSON.value(transform:) instead.")
 public struct NSURLDecoder: DecoderType {
     public static func decode(JSON: Alexander.JSON) -> NSURL? {
         return JSON.stringValue.flatMap({ NSURL(string: $0) })
@@ -57,6 +60,7 @@ public struct NSURLDecoder: DecoderType {
 /// For example: `let season = JSON.decode(RawRepresentableDecoder<Season>)`
 ///
 /// - SeeAlso: `RawRepresentable(rawValue:)`
+@available(*, deprecated, message="Use JSON.value<T: RawRepresentable>() instead.")
 public struct RawRepresentableDecoder<T: RawRepresentable>: DecoderType {
     public static func decode(JSON: Alexander.JSON) -> T? {
         return (JSON.object as? T.RawValue).flatMap({ T(rawValue: $0) })

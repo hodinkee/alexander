@@ -6,6 +6,7 @@
 //  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
 
+@available(*, deprecated, message="")
 public protocol EncoderType {
     associatedtype Value
     static func encode(value: Value) -> AnyObject
@@ -27,6 +28,7 @@ extension EncoderType {
 /// Encodes the given `NSDate` into a primative `JSON` type.
 ///
 /// - SeeAlso: `NSDate.timeIntervalSince1970`
+@available(*, deprecated, message="")
 public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
     public static func encode(value: NSDate) -> AnyObject {
         return value.timeIntervalSince1970
@@ -36,6 +38,7 @@ public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
 /// Encodes the given `NSDate` into a primative `JSON` type.
 ///
 /// - SeeAlso: `NSDate.timeIntervalSinceReferenceDate`
+@available(*, deprecated, message="")
 public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
     public static func encode(value: NSDate) -> AnyObject {
         return value.timeIntervalSinceReferenceDate
@@ -45,6 +48,7 @@ public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
 /// Encodes the given `NSURL` into a primative `JSON` type.
 ///
 /// - SeeAlso: `NSURL.absoluteString`
+@available(*, deprecated, message="")
 public struct NSURLEncoder: EncoderType {
     public static func encode(value: NSURL) -> AnyObject {
         #if swift(>=2.3)
