@@ -6,6 +6,7 @@
 //  Copyright © 2015-2016 HODINKEE. All rights reserved.
 //
 
+@available(*, deprecated, message="Switch to JSONDecodable protocol instead.")
 public protocol DecoderType {
     associatedtype Value
     static func decode(JSON: Alexander.JSON) -> Value?
