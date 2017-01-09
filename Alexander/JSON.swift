@@ -10,14 +10,14 @@ public struct JSON {
     
     // MARK: - Initializers
     
-    public init(object: AnyObject) {
+    public init(object: Any) {
         self.object = object
     }
 
     
     // MARK: - Properties
     
-    public var object: AnyObject
+    public var object: Any
 
     public var array: [JSON]? {
         return arrayValue?.map(JSON.init)
@@ -27,12 +27,12 @@ public struct JSON {
         return dictionaryValue?.mapValues(JSON.init)
     }
 
-    public var arrayValue: [AnyObject]? {
-        return object as? [AnyObject]
+    public var arrayValue: [Any]? {
+        return object as? [Any]
     }
 
-    public var dictionaryValue: [String: AnyObject]? {
-        return object as? [String: AnyObject]
+    public var dictionaryValue: [String: Any]? {
+        return object as? [String: Any]
     }
 
     public subscript(index: Int) -> JSON? {

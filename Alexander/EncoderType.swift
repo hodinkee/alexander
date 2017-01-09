@@ -14,12 +14,12 @@ public protocol EncoderType {
 extension EncoderType {
     /// Encode a sequence of values by calling `encode(_:)` with each `Value`
     /// in `sequence`.
-    public static func encodeSequence<S: Sequence>(_ sequence: S) -> AnyObject where S.Iterator.Element == Value {
+    public static func encodeSequence<S: Sequence>(_ sequence: S) -> Any where S.Iterator.Element == Value {
         return sequence.map(encode)
     }
 
     @available(*, deprecated, message : "Use encodeSequence(_:) instead.")
-    public static func encode<S: Sequence>(_ sequence: S) -> AnyObject where S.Iterator.Element == Value {
+    public static func encode<S: Sequence>(_ sequence: S) -> Any where S.Iterator.Element == Value {
         return encodeSequence(sequence)
     }
 }
