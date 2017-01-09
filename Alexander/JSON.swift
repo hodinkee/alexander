@@ -95,7 +95,7 @@ extension JSON {
 extension JSON: CustomDebugStringConvertible {
     public var debugDescription: String {
         guard let
-            data = try? self.data(.prettyPrinted),
+            data = try? self.data(with: .prettyPrinted),
             let string = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
         else {
             return "Invalid JSON."
