@@ -7,7 +7,7 @@
 //
 
 extension Dictionary {
-    func mapValues<T>(transform: Value -> T) -> [Key: T] {
+    func mapValues<T>(_ transform: (Value) -> T) -> [Key: T] {
         var mutableDictionary = [Key: T]()
         for (key, value) in self {
             mutableDictionary[key] = transform(value)

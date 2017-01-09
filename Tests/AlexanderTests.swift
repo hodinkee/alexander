@@ -21,7 +21,7 @@ final class AlexanderTests: XCTestCase {
     }
 
     func testDictionary() {
-        let dictionary = [
+        let dictionary: [String : Any] = [
             "double": 9823.212,
             "int": 42,
             "string": "Caleb",
@@ -85,16 +85,16 @@ final class AlexanderTests: XCTestCase {
     func testURLHelpers() {
         let JSON = Alexander.JSON(object: "https://www.hodinkee.com")
 
-        guard let URL = JSON.decode(NSURLDecoder) else {
+        guard let url = JSON.decode(NSURLDecoder) else {
             XCTFail()
             return
         }
 
-        XCTAssertEqual(URL, NSURL(string: "https://www.hodinkee.com"))
+        XCTAssertEqual(url, URL(string: "https://www.hodinkee.com"))
     }
 
     func testDateHelpers() {
         let JSON = Alexander.JSON(object: 978307200)
-        XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder), NSDate(timeIntervalSinceReferenceDate: 0))
+        XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder), Date(timeIntervalSinceReferenceDate: 0))
     }
 }

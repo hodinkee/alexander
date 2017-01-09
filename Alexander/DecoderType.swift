@@ -8,18 +8,18 @@
 
 public protocol DecoderType {
     associatedtype Value
-    static func decode(JSON: Alexander.JSON) -> Value?
+    static func decode(_ JSON: Alexander.JSON) -> Value?
 }
 
 extension JSON {
 
     /// Turn the receiver into a single `T.Value`.
-    public func decode<T: DecoderType>(decoder: T.Type) -> T.Value? {
+    public func decode<T: DecoderType>(_ decoder: T.Type) -> T.Value? {
         return decode(T.decode)
     }
 
     /// Turn the receiver into an array of `T.Value`
-    public func decodeArray<T: DecoderType>(decoder: T.Type) -> [T.Value]? {
+    public func decodeArray<T: DecoderType>(_ decoder: T.Type) -> [T.Value]? {
         return decodeArray(T.decode)
     }
 }
@@ -28,8 +28,8 @@ extension JSON {
 ///
 /// - SeeAlso: `NSDate(timeIntervalSince1970:)`
 public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
-    public static func decode(JSON: Alexander.JSON) -> NSDate? {
-        return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSince1970: $0) })
+    public static func decode(_ JSON: Alexander.JSON) -> Date? {
+        return (JSON.object as? TimeInterval).flatMap({ Date(timeIntervalSince1970: $0) })
     }
 }
 
@@ -37,8 +37,8 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
 ///
 /// - SeeAlso: `NSDate(timeIntervalSinceReferenceDate:)`
 public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
-    public static func decode(JSON: Alexander.JSON) -> NSDate? {
-        return (JSON.object as? NSTimeInterval).flatMap({ NSDate(timeIntervalSinceReferenceDate: $0) })
+    public static func decode(_ JSON: Alexander.JSON) -> Date? {
+        return (JSON.object as? TimeInterval).flatMap({ Date(timeIntervalSinceReferenceDate: $0) })
     }
 }
 
@@ -46,8 +46,8 @@ public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
 ///
 /// - SeeAlso: `NSURL(string:)`
 public struct NSURLDecoder: DecoderType {
-    public static func decode(JSON: Alexander.JSON) -> NSURL? {
-        return JSON.stringValue.flatMap({ NSURL(string: $0) })
+    public static func decode(_ JSON: Alexander.JSON) -> URL? {
+        return JSON.stringValue.flatMap({ URL(string: $0) })
     }
 }
 
@@ -57,7 +57,7 @@ public struct NSURLDecoder: DecoderType {
 ///
 /// - SeeAlso: `RawRepresentable(rawValue:)`
 public struct RawRepresentableDecoder<T: RawRepresentable>: DecoderType {
-    public static func decode(JSON: Alexander.JSON) -> T? {
+    public static func decode(_ JSON: Alexander.JSON) -> T? {
         return (JSON.object as? T.RawValue).flatMap({ T(rawValue: $0) })
     }
 }

@@ -57,7 +57,7 @@ struct User {
 
 struct UserDecoder: DecoderType {
     typealias Value = User
-    static func decode(JSON: Alexander.JSON) -> Value? {
+    static func decode(_ JSON: Alexander.JSON) -> Value? {
         guard let ID = JSON["id"]?.stringValue, let name = JSON["name"]?.stringValue else {
             return nil
         }

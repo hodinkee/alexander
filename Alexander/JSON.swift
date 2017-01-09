@@ -70,33 +70,33 @@ public struct JSON {
     
     // MARK: - Functions
 
-    public func decode<T>(transform: JSON -> T?) -> T? {
+    public func decode<T>(_ transform: (JSON) -> T?) -> T? {
         return transform(self)
     }
     
-    public func decodeArray<T>(transform: JSON -> T?) -> [T]? {
+    public func decodeArray<T>(_ transform: (JSON) -> T?) -> [T]? {
         return arrayValue?.lazy.map(JSON.init).flatMap(transform)
     }
 }
 
 extension JSON {
-    public init(data: NSData, options: NSJSONReadingOptions = []) throws {
-        self.object = try NSJSONSerialization.JSONObjectWithData(data, options: options)
+    public init(data: Data, options: JSONSerialization.ReadingOptions = []) throws {
+        self.object = try JSONSerialization.jsonObject(with: data, options: options)
     }
 
-    public func data(options: NSJSONWritingOptions = []) throws -> NSData {
-        guard NSJSONSerialization.isValidJSONObject(object) else {
-            throw AlexanderError.InvalidObject
+    public func data(with options: JSONSerialization.WritingOptions = []) throws -> Data {
+        guard JSONSerialization.isValidJSONObject(object) else {
+            throw AlexanderError.invalidObject
         }
-        return try NSJSONSerialization.dataWithJSONObject(object, options: options)
+        return try JSONSerialization.data(withJSONObject: object, options: options)
     }
 }
 
 extension JSON: CustomDebugStringConvertible {
     public var debugDescription: String {
         guard let
-            data = try? self.data(.PrettyPrinted),
-            string = NSString(data: data, encoding: NSUTF8StringEncoding)
+            data = try? self.data(.prettyPrinted),
+            let string = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
         else {
             return "Invalid JSON."
         }
