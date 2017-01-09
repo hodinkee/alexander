@@ -14,7 +14,7 @@ final class UserDecoderTests: XCTestCase {
         let user = User(ID: "1", name: "Caleb")
         let object = [ "id": user.ID, "name": user.name ]
         let JSON = Alexander.JSON(object: object)
-        guard let decodedUser = JSON.decode(UserDecoder) else {
+        guard let decodedUser = JSON.decode(UserDecoder.self) else {
             XCTFail()
             return
         }
@@ -35,7 +35,7 @@ final class UserDecoderTests: XCTestCase {
             ]
         ]
         let JSON = Alexander.JSON(object: object)
-        guard let decodedUsers = JSON["users"]?.decodeArray(UserDecoder) else {
+        guard let decodedUsers = JSON["users"]?.decodeArray(UserDecoder.self) else {
             XCTFail()
             return
         }
