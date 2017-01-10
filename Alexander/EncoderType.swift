@@ -8,7 +8,7 @@
 
 public protocol EncoderType {
     associatedtype Value
-    static func encode(_ value: Value) -> AnyObject
+    static func encode(_ value: Value) -> Any
 }
 
 extension EncoderType {
@@ -28,8 +28,8 @@ extension EncoderType {
 ///
 /// - SeeAlso: `NSDate.timeIntervalSince1970`
 public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
-    public static func encode(_ value: Date) -> AnyObject {
-        return value.timeIntervalSince1970 as AnyObject
+    public static func encode(_ value: Date) -> Any {
+        return value.timeIntervalSince1970
     }
 }
 
@@ -37,8 +37,8 @@ public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
 ///
 /// - SeeAlso: `NSDate.timeIntervalSinceReferenceDate`
 public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
-    public static func encode(_ value: Date) -> AnyObject {
-        return value.timeIntervalSinceReferenceDate as AnyObject
+    public static func encode(_ value: Date) -> Any {
+        return value.timeIntervalSinceReferenceDate
     }
 }
 
@@ -46,11 +46,7 @@ public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
 ///
 /// - SeeAlso: `NSURL.absoluteString`
 public struct NSURLEncoder: EncoderType {
-    public static func encode(_ value: URL) -> AnyObject {
-        #if swift(>=2.3)
-            return value.absoluteString as AnyObject? ?? NSNull()
-        #else
-            return value.absoluteString
-        #endif
+    public static func encode(_ value: URL) -> Any {
+        return value.absoluteString
     }
 }
