@@ -24,6 +24,13 @@ extension JSON {
     }
 }
 
+@available(*, deprecated, renamed: "DateTimeIntervalSince1970Decoder")
+public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
+    public static func decode(_ JSON: Alexander.JSON) -> Date? {
+        return DateTimeIntervalSince1970Decoder.decode(JSON)
+    }
+}
+
 /// Decodes the given `JSON` into a `Date`.
 ///
 /// - SeeAlso: `Date(timeIntervalSince1970:)`
@@ -35,6 +42,13 @@ public struct DateTimeIntervalSince1970Decoder: DecoderType {
     }
 }
 
+@available(*, deprecated, renamed: "DateTimeIntervalSinceReferenceDateDecoder")
+public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
+    public static func decode(_ JSON: Alexander.JSON) -> Date? {
+        return DateTimeIntervalSinceReferenceDateDecoder.decode(JSON)
+    }
+}
+
 /// Decodes the given `JSON` into a `Date`.
 ///
 /// - SeeAlso: `Date(timeIntervalSinceReferenceDate:)`
@@ -43,6 +57,13 @@ public struct DateTimeIntervalSinceReferenceDateDecoder: DecoderType {
         return (JSON.object as? NSNumber)
             .map({ TimeInterval($0) })
             .flatMap({ Date(timeIntervalSinceReferenceDate: $0) })
+    }
+}
+
+@available(*, deprecated, renamed: "URLDecoder")
+public struct NSURLDecoder: DecoderType {
+    public static func decode(_ JSON: Alexander.JSON) -> URL? {
+        return URLDecoder.decode(JSON)
     }
 }
 
