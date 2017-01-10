@@ -85,7 +85,7 @@ final class AlexanderTests: XCTestCase {
     func testURLHelpers() {
         let JSON = Alexander.JSON(object: "https://www.hodinkee.com")
 
-        guard let url = JSON.decode(NSURLDecoder.self) else {
+        guard let url = JSON.decode(URLDecoder.self) else {
             XCTFail()
             return
         }
@@ -95,6 +95,6 @@ final class AlexanderTests: XCTestCase {
 
     func testDateHelpers() {
         let JSON = Alexander.JSON(object: 978307200)
-        XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder.self), Date(timeIntervalSinceReferenceDate: 0))
+        XCTAssertEqual(JSON.decode(DateTimeIntervalSince1970Decoder.self), Date(timeIntervalSinceReferenceDate: 0))
     }
 }

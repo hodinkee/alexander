@@ -24,28 +24,28 @@ extension EncoderType {
     }
 }
 
-/// Encodes the given `NSDate` into a primative `JSON` type.
+/// Encodes the given `Date` into a primative `JSON` type.
 ///
-/// - SeeAlso: `NSDate.timeIntervalSince1970`
-public struct NSDateTimeIntervalSince1970Encoder: EncoderType {
+/// - SeeAlso: `Date.timeIntervalSince1970`
+public struct DateTimeIntervalSince1970Encoder: EncoderType {
     public static func encode(_ value: Date) -> Any {
         return value.timeIntervalSince1970
     }
 }
 
-/// Encodes the given `NSDate` into a primative `JSON` type.
+/// Encodes the given `Date` into a primative `JSON` type.
 ///
-/// - SeeAlso: `NSDate.timeIntervalSinceReferenceDate`
-public struct NSDateTimeIntervalSinceReferenceDateEncoder: EncoderType {
+/// - SeeAlso: `Date.timeIntervalSinceReferenceDate`
+public struct DateTimeIntervalSinceReferenceDateEncoder: EncoderType {
     public static func encode(_ value: Date) -> Any {
         return value.timeIntervalSinceReferenceDate
     }
 }
 
-/// Encodes the given `NSURL` into a primative `JSON` type.
+/// Encodes the given `URL` into a primative `JSON` type.
 ///
-/// - SeeAlso: `NSURL.absoluteString`
-public struct NSURLEncoder: EncoderType {
+/// - SeeAlso: `URL.absoluteString`
+public struct URLEncoder: EncoderType {
     public static func encode(_ value: URL) -> Any {
         return value.absoluteString
     }

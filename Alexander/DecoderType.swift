@@ -24,10 +24,10 @@ extension JSON {
     }
 }
 
-/// Decodes the given `JSON` into a `NSDate`.
+/// Decodes the given `JSON` into a `Date`.
 ///
-/// - SeeAlso: `NSDate(timeIntervalSince1970:)`
-public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
+/// - SeeAlso: `Date(timeIntervalSince1970:)`
+public struct DateTimeIntervalSince1970Decoder: DecoderType {
     public static func decode(_ JSON: Alexander.JSON) -> Date? {
         return (JSON.object as? NSNumber)
             .map({ TimeInterval($0) })
@@ -35,10 +35,10 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
     }
 }
 
-/// Decodes the given `JSON` into a `NSDate`.
+/// Decodes the given `JSON` into a `Date`.
 ///
-/// - SeeAlso: `NSDate(timeIntervalSinceReferenceDate:)`
-public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
+/// - SeeAlso: `Date(timeIntervalSinceReferenceDate:)`
+public struct DateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     public static func decode(_ JSON: Alexander.JSON) -> Date? {
         return (JSON.object as? NSNumber)
             .map({ TimeInterval($0) })
@@ -46,10 +46,10 @@ public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     }
 }
 
-/// Decodes the given `JSON` into a `NSURL`.
+/// Decodes the given `JSON` into a `URL`.
 ///
-/// - SeeAlso: `NSURL(string:)`
-public struct NSURLDecoder: DecoderType {
+/// - SeeAlso: `URL(string:)`
+public struct URLDecoder: DecoderType {
     public static func decode(_ JSON: Alexander.JSON) -> URL? {
         return JSON.stringValue.flatMap({ URL(string: $0) })
     }
