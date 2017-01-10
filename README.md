@@ -10,7 +10,7 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 |  Xcode  |  Swift  |  iOS  |  tvOS  |  OS X  |
 | :-----: | :-----: | :---: | :----: | :----: |
-| 8.0     | 2.3     | 8.0   | 9.0    | 10.9   |
+| 8.0     | 3.0     | 8.0   | 9.0    | 10.9   |
 
 ## Installation
 
@@ -70,9 +70,9 @@ struct SizeDecoder {
 
 Alexander ships with a handful of decoders for common types:
 
-- `NSDateTimeIntervalSince1970Decoder`
-- `NSDateTimeIntervalSinceReferenceDateDecoder`
-- `NSURLDecoder`
+- `DateTimeIntervalSince1970Decoder`
+- `DateTimeIntervalSinceReferenceDateDecoder`
+- `URLDecoder`
 - `RawRepresentableDecoder`
 
 ### Nested Objects
