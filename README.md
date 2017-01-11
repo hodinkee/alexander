@@ -1,4 +1,4 @@
-#Alexander
+# Alexander
 
 [![Build Status](https://travis-ci.org/hodinkee/alexander.svg?branch=master)](https://travis-ci.org/hodinkee/alexander)
 [![Carthage Compatible](https://img.shields.io/badge/carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
@@ -15,9 +15,11 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 ## Installation
 
 ##### [Carthage](https://github.com/carthage/carthage)
+
 > `github "hodinkee/alexander"`
 
-#####[CocoaPods](https://github.com/cocoapods/cocoapods)
+##### [CocoaPods](https://github.com/cocoapods/cocoapods)
+
 > `pod 'Alexander'`
 
 ## Usage
@@ -46,7 +48,6 @@ struct UserDecoder: DecoderType {
         return User(ID: ID, name: name, email: email)
     }
 }
-
 ```
 
 Now you can do `let author = JSON["user"]?.decode(UserDecoder)` to get a single user, or `let users = JSON["users"]?.decodeArray(UserDecoder)` to get an array of users.
