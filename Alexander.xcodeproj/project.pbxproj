@@ -972,8 +972,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA3089E1C62C25B004B06C3 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -985,8 +983,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA3089E1C62C25B004B06C3 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
