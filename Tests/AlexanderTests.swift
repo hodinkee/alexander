@@ -21,7 +21,7 @@ final class AlexanderTests: XCTestCase {
     }
 
     func testDictionary() {
-        let dictionary = [
+        let dictionary: [String : Any] = [
             "double": 9823.212,
             "int": 42,
             "string": "Caleb",
@@ -59,8 +59,8 @@ final class AlexanderTests: XCTestCase {
             case Fall = "fall"
         }
 
-        XCTAssertEqual(JSON(object: "summer").decode(RawRepresentableDecoder<Season>), .Summer)
-        XCTAssertNil(JSON(object: "wrong").decode(RawRepresentableDecoder<Season>))
+        XCTAssertEqual(JSON(object: "summer").decode(RawRepresentableDecoder<Season>.self), .Summer)
+        XCTAssertNil(JSON(object: "wrong").decode(RawRepresentableDecoder<Season>.self))
     }
 
     func testDecodeRawRepresentableArray() {
@@ -73,7 +73,7 @@ final class AlexanderTests: XCTestCase {
 
         let seasons = [ "winter", "summer", "spring", "wrong" ]
         let JSON = Alexander.JSON(object: seasons)
-        guard let decodedSeasons = JSON.decodeArray(RawRepresentableDecoder<Season>) else {
+        guard let decodedSeasons = JSON.decodeArray(RawRepresentableDecoder<Season>.self) else {
             XCTFail()
             return
         }
@@ -85,16 +85,16 @@ final class AlexanderTests: XCTestCase {
     func testURLHelpers() {
         let JSON = Alexander.JSON(object: "https://www.hodinkee.com")
 
-        guard let URL = JSON.decode(NSURLDecoder) else {
+        guard let url = JSON.decode(URLDecoder.self) else {
             XCTFail()
             return
         }
 
-        XCTAssertEqual(URL, NSURL(string: "https://www.hodinkee.com"))
+        XCTAssertEqual(url, URL(string: "https://www.hodinkee.com"))
     }
 
     func testDateHelpers() {
         let JSON = Alexander.JSON(object: 978307200)
-        XCTAssertEqual(JSON.decode(NSDateTimeIntervalSince1970Decoder), NSDate(timeIntervalSinceReferenceDate: 0))
+        XCTAssertEqual(JSON.decode(DateTimeIntervalSince1970Decoder.self), Date(timeIntervalSinceReferenceDate: 0))
     }
 }
