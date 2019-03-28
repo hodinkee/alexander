@@ -37,7 +37,7 @@ public struct NSDateTimeIntervalSince1970Decoder: DecoderType {
 public struct DateTimeIntervalSince1970Decoder: DecoderType {
     public static func decode(_ JSON: Alexander.JSON) -> Date? {
         return (JSON.object as? NSNumber)
-            .map({ TimeInterval($0) })
+            .map({ TimeInterval($0.doubleValue) })
             .flatMap({ Date(timeIntervalSince1970: $0) })
     }
 }
@@ -55,7 +55,7 @@ public struct NSDateTimeIntervalSinceReferenceDateDecoder: DecoderType {
 public struct DateTimeIntervalSinceReferenceDateDecoder: DecoderType {
     public static func decode(_ JSON: Alexander.JSON) -> Date? {
         return (JSON.object as? NSNumber)
-            .map({ TimeInterval($0) })
+            .map({ TimeInterval($0.doubleValue) })
             .flatMap({ Date(timeIntervalSinceReferenceDate: $0) })
     }
 }

@@ -75,7 +75,7 @@ public struct JSON {
     }
     
     public func decodeArray<T>(_ transform: (JSON) -> T?) -> [T]? {
-        return arrayValue?.lazy.map(JSON.init).flatMap(transform)
+        return arrayValue?.lazy.map(JSON.init).compactMap(transform)
     }
 }
 

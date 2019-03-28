@@ -644,33 +644,33 @@
 				TargetAttributes = {
 					3A512ED81BE169910091A124 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 					};
 					3A512EE11BE169920091A124 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 					3A512EF41BE169A00091A124 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 					};
 					3BEDAE1E1B5DC30500AD52FE = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 					};
 					3BEDAE291B5DC30500AD52FE = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 					3BEDAE631B5DC4EC00AD52FE = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 					};
 					3BEDAE6D1B5DC4EC00AD52FE = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -854,7 +854,7 @@
 				DYLIB_CURRENT_VERSION = 14;
 				INFOPLIST_FILE = Alexander/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -866,7 +866,7 @@
 				DYLIB_CURRENT_VERSION = 14;
 				INFOPLIST_FILE = Alexander/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -877,7 +877,7 @@
 				INFOPLIST_FILE = Tests/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -888,7 +888,7 @@
 				INFOPLIST_FILE = Tests/Platforms/tvOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -900,7 +900,7 @@
 				DYLIB_CURRENT_VERSION = 14;
 				INFOPLIST_FILE = Alexander/Platforms/watchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -912,7 +912,7 @@
 				DYLIB_CURRENT_VERSION = 14;
 				INFOPLIST_FILE = Alexander/Platforms/watchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -952,7 +952,7 @@
 				DYLIB_CURRENT_VERSION = 14;
 				INFOPLIST_FILE = Alexander/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -964,7 +964,7 @@
 				DYLIB_CURRENT_VERSION = 14;
 				INFOPLIST_FILE = Alexander/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -975,7 +975,7 @@
 				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -986,7 +986,7 @@
 				INFOPLIST_FILE = Tests/Platforms/iOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -999,7 +999,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Alexander/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1012,7 +1012,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Alexander/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1023,7 +1023,7 @@
 				INFOPLIST_FILE = Tests/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1034,7 +1034,7 @@
 				INFOPLIST_FILE = Tests/Platforms/macOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hodinkee.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
