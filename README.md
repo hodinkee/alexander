@@ -10,7 +10,7 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 |  Xcode  |  Swift  |  iOS  |  tvOS  |  OS X  |
 | :-----: | :-----: | :---: | :----: | :----: |
-| 8.0     | 3.0     | 8.0   | 9.0    | 10.9   |
+| 10.2    | 5.0     | 8.0   | 9.0    | 10.9   |
 
 ## Installation
 
