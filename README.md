@@ -1,6 +1,5 @@
 # Alexander
 
-[![Build Status](https://travis-ci.org/hodinkee/alexander.svg?branch=master)](https://travis-ci.org/hodinkee/alexander)
 [![Carthage Compatible](https://img.shields.io/badge/carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Alexander.svg)](https://cocoapods.org/pods/Alexander)
 
