@@ -1,6 +1,5 @@
 # Alexander
 
-[![Build Status](https://travis-ci.org/hodinkee/alexander.svg?branch=master)](https://travis-ci.org/hodinkee/alexander)
 [![Carthage Compatible](https://img.shields.io/badge/carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Alexander.svg)](https://cocoapods.org/pods/Alexander)
 
@@ -10,7 +9,7 @@ Alexander is an extremely simple JSON helper written in Swift. It brings type sa
 
 |  Xcode  |  Swift  |  iOS  |  tvOS  |  OS X  |
 | :-----: | :-----: | :---: | :----: | :----: |
-| 8.0     | 3.0     | 8.0   | 9.0    | 10.9   |
+| 10.2    | 5.0     | 8.0   | 9.0    | 10.9   |
 
 ## Installation
 
